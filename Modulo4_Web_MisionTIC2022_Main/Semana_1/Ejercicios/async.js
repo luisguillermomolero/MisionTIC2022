@@ -2,7 +2,7 @@
 
 Nuestro programa es como un hilo que va cayendo, en cuanto se encuetre a una promesa genera un hilo aparte que baja exactamente igual a la vez que el hilo principal "sin detener el hilo principal". Si no se trabaja con promesas mientras se esta esperando que ".then" nos devuelva una respuesta, nuestro hilo principal se detendria, el programa se detiene y cuando nos devuelve un verdadero el codigo se sigue ejecutando. 
 
-Con el uso de las promesas, evitamos que se detenga nuestro programa, ya que nuestro hilo principal se ejecuta y de forma paralela, se crea un hilo secundario donde se ejecuta la promesa; una vez se ejecute esta promesa, volvera al hilo principal.
+Con el uso de las promesas, evitamos que se detenga nuestro programa, ya que nuestro hilo principal se ejecuta y de forma paralela, se crea un hilo secundario donde se ejecuta la promesa; una vez se ejecute esta promesa, volvera al hilo principal. 
 */
 
 

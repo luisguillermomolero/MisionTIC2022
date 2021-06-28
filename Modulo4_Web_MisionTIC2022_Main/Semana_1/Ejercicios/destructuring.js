@@ -11,7 +11,7 @@ const Persona2={
     }
 }
 
-//Dentro de persona hay dos propiedades; "nombre" y "edad", donde cada una tiene dos valores
+//Dentro de persona hay dos propiedades; "nombre" y "edad", donde cada una tiene dos valores.
 
 //Se guarda dentro de "Persona2", estas dos propiedades instanceadas
 const {nombre, edad}=Persona2
