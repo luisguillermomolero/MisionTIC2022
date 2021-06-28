@@ -1,0 +1,19 @@
+==============================================
+Casos Único
+==============================================
+print(listaPeliculas(rutaFileCsv))
+
+                           Gross Earnings
+Country        Language
+Aruba          English       1.007614e+07
+Australia      English       3.367852e+07
+Brazil         Portuguese    5.595428e+06
+Canada         English       1.771869e+07
+               French        9.473382e+06
+China          English       4.398423e+07
+Czech Republic English       2.060953e+06
+Denmark        Danish        1.647780e+06
+               English       2.221994e+06
+France         English       1.876274e+07
+Fin del registro
+-----------------------------------------------

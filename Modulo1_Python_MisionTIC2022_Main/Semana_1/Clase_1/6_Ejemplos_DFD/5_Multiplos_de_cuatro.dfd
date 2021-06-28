@@ -1,0 +1,54 @@
+ Dfd (c)
+1
+1
+1
+0
+0
+4
+1
+214
+'D.F.Q.P VISUALIZAR LOS MULTIPLOS DE 4 COMPRENDIDOS ENTRE 4 Y N DONDE N ES UN NUMERO INTRODUCIDO POR TECLADO Y DEBE SER MAYOR A 4 (Un múltiplo de un número es otro número que lo contiene un número entero de veces)'
+6
+2
+1
+N
+1
+0
+1
+I
+1
+0
+4
+1
+50
+'POR FAVOR INGRESE EL VALOR DE N Y PRECIONE ENTER'
+5
+1
+1
+N
+8
+1
+1
+I
+1
+1
+4
+1
+1
+N
+1
+1
+1
+7
+0
+1
+9
+I MOD 4=0
+13
+4
+1
+62
+'EN UN RANGO DE 4 Y ',N,'  EL NUMERO ',I,'   ES MULTIPLO DE 4'
+13
+10
+1

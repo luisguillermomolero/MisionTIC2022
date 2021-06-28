@@ -1,0 +1,39 @@
+================================================================================
+Casos públicos
+================================================================================
+Tarjetas = {'idAlumno': 1001,'cMatematica': 3,'cFisica': 4,'cProgramacion': 3}
+print(TarjetaAlumnos(Tarjetas))
+{'idAlumno': 1001, 'aproboUna': 0, 'aproboDos': 0, 'aproboTodas': 1}
+--------------------------------------------------------------------------------
+Tarjetas = {'idAlumno': 1002,'cMatematica': 3,'cFisica': 2,'cProgramacion': 2}
+print(TarjetaAlumnos(Tarjetas))
+{'idAlumno': 1002, 'aproboUna': 1, 'aproboDos': 0, 'aproboTodas': 0}
+--------------------------------------------------------------------------------
+Tarjetas = {'idAlumno': 1003,'cMatematica': 1,'cFisica': 2,'cProgramacion': 2}
+print(TarjetaAlumnos(Tarjetas))
+{'idAlumno': 1003, 'aproboUna': 0, 'aproboDos': 0, 'aproboTodas': 0}
+--------------------------------------------------------------------------------
+
+================================================================================
+Casos privados
+================================================================================
+Tarjetas = {'idAlumno': 1004,'cMatematica': 3,'cFisica': 3,'cProgramacion': 2}
+print(TarjetaAlumnos(Tarjetas))
+{'idAlumno': 1004, 'aproboUna': 0, 'aproboDos': 1, 'aproboTodas': 0}
+--------------------------------------------------------------------------------
+Tarjetas = {'idAlumno': 1005,'cMatematica': 2,'cFisica': 2,'cProgramacion': 3}
+print(TarjetaAlumnos(Tarjetas))
+{'idAlumno': 1005, 'aproboUna': 1, 'aproboDos': 0, 'aproboTodas': 0}
+--------------------------------------------------------------------------------
+Tarjetas = {'idAlumno': 1006,'cMatematica': 2,'cFisica': 3,'cProgramacion': 2}
+print(TarjetaAlumnos(Tarjetas))
+{'idAlumno': 1006, 'aproboUna': 1, 'aproboDos': 0, 'aproboTodas': 0}
+--------------------------------------------------------------------------------
+Tarjetas = {'idAlumno': 1007,'cMatematica': 2,'cFisica': 3,'cProgramacion': 3}
+print(TarjetaAlumnos(Tarjetas))
+{'idAlumno': 1007, 'aproboUna': 0, 'aproboDos': 1, 'aproboTodas': 0}
+--------------------------------------------------------------------------------
+Tarjetas = {'idAlumno': 1008,'cMatematica': 3,'cFisica': 3,'cProgramacion': 3}
+print(TarjetaAlumnos(Tarjetas))
+{'idAlumno': 1008, 'aproboUna': 0, 'aproboDos': 0, 'aproboTodas': 1}
+--------------------------------------------------------------------------------

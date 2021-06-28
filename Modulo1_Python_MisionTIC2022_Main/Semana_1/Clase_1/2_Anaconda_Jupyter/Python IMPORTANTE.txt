@@ -1,0 +1,7 @@
+PYTHON ERRORES:
+- No instalar la version 3.9, no tiene todas la librerias
+- Mejor instalar Anaconda, tiene todas las librerias preempacadas
+
+** Para actualizar pandas y numpy:
+	conda install pandas
+	conda install numpy 

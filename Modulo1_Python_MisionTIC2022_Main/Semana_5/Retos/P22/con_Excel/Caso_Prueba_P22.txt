@@ -1,0 +1,22 @@
+==============================================
+Casos Único
+==============================================
+print(listaPeliculas(rutaFileXls))
+
+                         Gross Earnings
+Country      Language
+Afghanistan  Dari          1.127331e+06
+Argentina    Spanish       7.230936e+06
+Aruba        English       1.007614e+07
+Australia    Aboriginal    6.165429e+06
+             Dzongkha      5.052950e+05
+...                                 ...
+USA          Maya          5.085989e+07
+             None          2.601847e+06
+             Spanish       1.034930e+07
+             Vietnamese    6.389510e+05
+West Germany German        1.143313e+07
+
+[100 rows x 1 columns]
+Fin del registro
+-----------------------------------------------

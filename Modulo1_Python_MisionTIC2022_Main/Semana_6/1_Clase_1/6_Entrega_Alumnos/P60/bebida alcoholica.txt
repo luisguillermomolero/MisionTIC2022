@@ -1,0 +1,55 @@
+#Programa que determina si una bebida alcoholica tiene descuento y su porcentaje de alcohol
+#Edwin Yesid Estupiñán Cascante CC 79801530 Grupo 60
+class licor:
+    def __init__(self,tipo,marca,tamaño,precio,cantidad,codigo):
+
+        self.tipo = tipo
+        self.marca = marca
+        self.tamaño = tamaño
+        self.precio = precio
+        self.cantidad = cantidad
+        self.codigo = codigo
+
+    def precio_ (self):
+
+        if self.precio >=50000:
+            print('La bebida tiene descuento')
+        else:
+            print('La bebida no tiene descuento')
+
+    def tipo_ (self):
+
+        if self.tipo == 'Cerveza':
+            print('La bebida tiene entre 4%y 6% de alcohol en volumen')
+        elif self.tipo== "Vino" :
+            print('La bebida tiene entre 15 y 22% de alcohol por volumen')
+        else: 
+                print("Bebida no encontrada")
+    def tamaño_ (self):
+
+        if self.tamaño >=1000:
+            print('La bebida alcoholica es grande')
+        else:
+            print('La bebida alcoholica es pequeña')
+
+    def cantidad_ (self):
+
+        if self.cantidad >=12 :
+            print('Compra al por mayor')
+        else:
+            print('Compra al detal')
+    def codigo_(self):
+        if self.codigo <0:
+            print("Codigo incorrecto")
+        else:
+            print("Codigo correcto")
+            
+bebidalcoholica = licor('Vino',"Concha y Toro" ,2000,150000,2,521)
+
+print('La marca de la bebida es: ', bebidalcoholica.marca)
+print('El tipo de la bebida es: ', bebidalcoholica.tipo)
+bebidalcoholica.precio_()
+bebidalcoholica.tipo_()
+bebidalcoholica.cantidad_()
+bebidalcoholica.codigo_()
+bebidalcoholica.tamaño_()

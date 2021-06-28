@@ -1,0 +1,31 @@
+===========================================================================================================================================================
+Casos públicos
+===========================================================================================================================================================
+Inventario = {'idDisco': 150001,'genDisco': 'Floklore','costoDisco': 30000,'cantanteD': 'Luis Silva','empDisco': 'Sony','volDisco': 5,'cantCompra': 6}
+print(discoTienda(Inventario))
+{'idDisco': 150001, 'genDisco': 'Floklore', 'costoDisco': 30000, 'cantCompra': 6, 'totalPago': 162000.0}
+-----------------------------------------------------------------------------------------------------------------------------------------------------------
+Inventario = {'idDisco': 170001,'genDisco': 'Pop','costoDisco': 25365, 'cantanteD': 'Justin Bieber','empDisco': 'WMG','volDisco': 3,'cantCompra': 2}
+print(discoTienda(Inventario))
+{'idDisco': 170001, 'genDisco': 'Pop', 'costoDisco': 25365, 'cantCompra': 2, 'totalPago': 48193.5}
+-----------------------------------------------------------------------------------------------------------------------------------------------------------
+Inventario = {'idDisco': 200000,'genDisco': 'O/G','costoDisco': 31578, 'cantanteD': 'KPop','empDisco': 'JYP','volDisco': 2,'cantCompra': 7}
+print(discoTienda(Inventario))
+{'idDisco': 200000, 'genDisco': 'O/G', 'costoDisco': 31578, 'cantCompra': 7, 'totalPago': 165784.5}
+-----------------------------------------------------------------------------------------------------------------------------------------------------------
+
+===========================================================================================================================================================
+Casos privados
+===========================================================================================================================================================
+Inventario = {'idDisco': 180001,'genDisco': 'Gospel','costoDisco': 31875.68, 'cantanteD': 'Sam Cooke','empDisco': 'WMG','volDisco': 8,'cantCompra': 6}
+print(discoTienda(Inventario))
+{'idDisco': 180001, 'genDisco': 'Gospel', 'costoDisco': 31875.68, 'cantCompra': 6, 'totalPago': 114752.45}
+-----------------------------------------------------------------------------------------------------------------------------------------------------------
+Inventario = {'idDisco': 160001,'genDisco': 'Rock','costoDisco': 29874.12, 'cantanteD': 'Pink Floyd','empDisco': 'PolyGram','volDisco': 2,'cantCompra': 5}
+print(discoTienda(Inventario))
+{'idDisco': 160001, 'genDisco': 'Rock', 'costoDisco': 29874.12, 'cantCompra': 5, 'totalPago': 119496.48}
+-----------------------------------------------------------------------------------------------------------------------------------------------------------
+Inventario = {'idDisco': 170001,'genDisco': 'Pop','costoDisco': 23587.65, 'cantanteD': 'Lil Uzi Vert','empDisco': 'SM','volDisco': 2,'cantCompra': 3}
+print(discoTienda(Inventario))
+{'idDisco': 170001, 'genDisco': 'Pop', 'costoDisco': 23587.65, 'cantCompra': 3, 'totalPago': 67224.8}
+-----------------------------------------------------------------------------------------------------------------------------------------------------------

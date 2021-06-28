@@ -1,0 +1,31 @@
+==============================================================================================================
+Casos públicos
+==============================================================================================================
+Productos = {'idVenta': 1001,'vArticulo': 85125.65,'dProducto': 'Camisa','tProducto': 's'}
+print(gananciasVentas(Productos))
+{'idVenta': 1001, 'vArticulo': 85125.65, 'cProducto': 4256.28, 'gServicios': 12768.85, 'rCompra': 34050.26}
+--------------------------------------------------------------------------------------------------------------
+Productos = {'idVenta': 1002,'vArticulo': 210500,'dProducto': 'Pantalon','tProducto': 'm'}
+print(gananciasVentas(Productos))
+{'idVenta': 1002, 'vArticulo': 210500, 'cProducto': 25260.0, 'gServicios': 52625.0, 'rCompra': 105250.0}
+--------------------------------------------------------------------------------------------------------------
+Productos = {'idVenta': 1003,'vArticulo': 145954.63,'dProducto': 'Chaqueta','tProducto': 'l'}
+print(gananciasVentas(Productos))
+{'idVenta': 1003, 'vArticulo': 145954.63, 'cProducto': 14595.46, 'gServicios': 29190.93, 'rCompra': 65679.58}
+--------------------------------------------------------------------------------------------------------------
+
+==============================================================================================================
+Casos privados
+==============================================================================================================
+Productos = {'idVenta': 1004,'vArticulo': 214874.32,'dProducto': 'Chaqueta','tProducto': 's'}
+print(gananciasVentas(Productos))
+{'idVenta': 1004, 'vArticulo': 214874.32, 'cProducto': 23636.18, 'gServicios': 53718.58, 'rCompra': 107437.16}
+--------------------------------------------------------------------------------------------------------------
+Productos = {'idVenta': 1005,'vArticulo': 115263.23,'dProducto': 'Chaqueta','tProducto': 'm'}
+print(gananciasVentas(Productos))
+{'idVenta': 1005, 'vArticulo': 115263.23, 'cProducto': 10373.69, 'gServicios': 23052.65, 'rCompra': 51868.45} 
+--------------------------------------------------------------------------------------------------------------
+Productos = {'idVenta': 1006,'vArticulo': 58698.23,'dProducto': 'Chaqueta','tProducto': 'l'}
+print(gananciasVentas(Productos))
+{'idVenta': 1006, 'vArticulo': 58698.23, 'cProducto': 4108.88, 'gServicios': 8804.73, 'rCompra': 23479.29}
+--------------------------------------------------------------------------------------------------------------

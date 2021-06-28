@@ -1,0 +1,63 @@
+ Dfd (c)
+1
+1
+1
+0
+0
+4
+1
+52
+'INGRESE UN NÚMERO PARA DETERMINAR SI ES PRIMO O NÓ'
+5
+1
+1
+N
+8
+1
+1
+D
+1
+1
+2
+1
+1
+N
+1
+1
+1
+6
+1
+1
+R
+7
+N MOD D
+7
+0
+1
+5
+R = 0
+13
+7
+0
+1
+5
+D = N
+4
+1
+28
+N , ' NO ES UN NÚMERO PRIMO'
+13
+4
+1
+25
+N , ' ES UN NÚMERO PRIMO'
+13
+6
+1
+1
+D
+1
+N
+13
+10
+1
