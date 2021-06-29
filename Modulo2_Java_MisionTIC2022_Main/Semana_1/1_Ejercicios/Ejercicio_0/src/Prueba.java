@@ -1,8 +1,8 @@
 import java.util.Scanner; //Importa la clase Scanner
 
-public class App {
+public class Prueba {
     public static void main(String[] args) {
-        System.out.println("Hola Mundo");
+        System.out.print("Hola Mundo");
 
         var sc = new Scanner(System.in); //si no existe un sc.close() muestra un warning
         System.out.println("Por favor ingrese su nombre");
