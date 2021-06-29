@@ -2,15 +2,14 @@ import java.util.Scanner; //Importa la clase Scanner
 
 public class Prueba {
     public static void main(String[] args) {
-        System.out.print("Hola Mundo");
+        System.out.print("Hola Mundo \n");
 
         var sc = new Scanner(System.in); //si no existe un sc.close() muestra un warning
         System.out.println("Por favor ingrese su nombre");
         var nombre = sc.nextLine();
         
         System.out.println("Hola " + nombre + "!");
-        //sc.close();
-
+        
         System.out.print("Por favor, introduzca un número :");
         int numero = sc.nextInt(); //si no existe un sc.close() muestra un warning
 
@@ -42,8 +41,6 @@ public class Prueba {
         //var otroNombre = "Luis Guillermo";
         var resultado = saludo(otroNombre);
         System.out.println(resultado);
-        sc.close();
-        nsc.close();
     }
     
     /*Parametros de los métodos 
