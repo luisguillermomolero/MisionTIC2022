@@ -42,6 +42,8 @@ public class Prueba {
         //var otroNombre = "Luis Guillermo";
         var resultado = saludo(otroNombre);
         System.out.println(resultado);
+        sc.close();
+        nsc.close();
     }
     
     /*Parametros de los métodos 
