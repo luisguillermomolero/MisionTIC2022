@@ -11,7 +11,9 @@ public class Prueba {
         System.out.println("Hola " + nombre + "!");
         
         System.out.print("Por favor, introduzca un número :");
-        int numero = sc.nextInt(); //si no existe un sc.close() muestra un warning
+        int numero = sc.nextInt();
+        
+        //Cierre de Scanner
         sc.close();
 
         int i = 0;
