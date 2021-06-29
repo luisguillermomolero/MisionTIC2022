@@ -6,12 +6,13 @@ public class Prueba {
 
         var sc = new Scanner(System.in); //si no existe un sc.close() muestra un warning
         System.out.println("Por favor ingrese su nombre");
-        var nombre = sc.nextLine();
+        var nombre = sc.nextLine(); //nextInt(); nextFloat(); nextDouble();
         
         System.out.println("Hola " + nombre + "!");
         
         System.out.print("Por favor, introduzca un número :");
         int numero = sc.nextInt(); //si no existe un sc.close() muestra un warning
+        //sc.close();
 
         int i = 0;
         for (i = 0; i <= numero; i++){
@@ -38,7 +39,7 @@ public class Prueba {
         Scanner nsc = new Scanner(System.in);
         System.out.println("Por favor, ingrese un nombre");
         var otroNombre = nsc.nextLine();
-        //var otroNombre = "Luis Guillermo";
+        // var otroNombre = "Luis Guillermo";
         var resultado = saludo(otroNombre);
         System.out.println(resultado);
     }
