@@ -4,7 +4,7 @@ public class Prueba {
     public static void main(String[] args) {
         System.out.print("Hola Mundo \n");
 
-        var sc = new Scanner(System.in); //si no existe un sc.close() muestra un warning
+        var sc = new Scanner(System.in); //si no existe sc.close() muestra un warning.
         System.out.println("Por favor ingrese su nombre");
         var nombre = sc.nextLine(); //nextInt(); nextFloat(); nextDouble();
         
