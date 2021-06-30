@@ -1,6 +1,6 @@
 // Programa que lea dos números por teclado y muestre el resultado de su división. Se comprueba que el divisor sea distinto de cero.
 
-import java.util.*;
+import java.util.Scanner;
 
 public class Division {
     public static void main(String[] args) {
@@ -15,8 +15,8 @@ public class Division {
         if(divisor==0){
            System.out.println("No se puede dividir por cero");   
         }else{
-            System.out.println(dividendo + " / " + divisor + " = " + dividendo/divisor);  
-            //System.out.printf("%.2f / %.2f = %.2f %n" , dividendo, divisor , dividendo/divisor);        
+            System.out.println(dividendo + " / " + divisor + " = " + dividendo/divisor);
+            //System.out.printf("%.2f / %.2f = %.2f %n" , dividendo, divisor , dividendo/divisor);
         }
     sc.close();
     }

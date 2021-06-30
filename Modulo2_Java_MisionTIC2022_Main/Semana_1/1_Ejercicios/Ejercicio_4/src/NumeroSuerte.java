@@ -1,4 +1,4 @@
-//Programa que pida por teclado la fecha de nacimiento de una persona (dia, mes, año) y calcule su número de la suerte. Este número, se calcula sumando el día, mes y año de la fecha de nacimiento y a continuación sumando las cifras obtenidas en la suma.
+//Programa que pida por teclado la fecha de nacimiento de una persona (dia, mes, año) y calcule su número de la suerte. Este número, se calcula sumando el día, mes y año de la fecha de nacimiento y a continuación, sumando las cifras obtenidas en la suma.
 
 import java.util.Scanner;
 
