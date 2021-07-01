@@ -3,7 +3,7 @@
 public class DeArrayCad {
     
     public static void main(String[] args) {
-        //declaramos un array
+        //declaramos un arreglo unidimencional 
         char array1[] = {'H','o','l','a',' ','P','e','p','e'};
         
         //Declaramos tres Variable String
