@@ -4,14 +4,14 @@ public class Prueba {
     public static void main(String[] args) {
         System.out.print("Hola Mundo \n");
 
-        var sc = new Scanner(System.in); //si no existe sc.close() muestra un warning.
+        var sc = new Scanner(System.in); 
         System.out.println("Por favor ingrese su nombre");
         var nombre = sc.nextLine(); //nextInt(); nextFloat(); nextDouble();
         
         System.out.println("Hola " + nombre + "!");
         
         System.out.print("Por favor, introduzca un número :");
-        int numero = sc.nextInt();
+        int numero = sc.nextInt(); 
         
         //Cierre de Scanner
         sc.close();
