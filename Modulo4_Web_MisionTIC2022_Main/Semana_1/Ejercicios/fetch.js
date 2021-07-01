@@ -1,8 +1,7 @@
 /*
 Fetch es una funcion que nos permite trabajar a traves de promesas (es un objeto que representa la terminación o el fracaso de una operación asíncrona) para hacer peticiones a las APIs (interfaz de programación de aplicaciones) donde se puede extraer el codigo y mostrarlo.
 
-Se lo puede correr en cualquier navegador ya que todos trabajan con motor v8 de javaScript
-tienen toda la API de de su core
+Se lo puede correr en cualquier navegador ya que todos trabajan con motor v8 de javaScript, asimismo, todas las API's, cuentan con ellas en su core
 */
 
 // Recibe como unico parametro la url donde va hacer la peticion.

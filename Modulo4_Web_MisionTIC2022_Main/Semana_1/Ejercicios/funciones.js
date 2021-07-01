@@ -13,7 +13,6 @@ function NombreFuncion(){
 function saludar(){
     console.log("Hola")
 }
-
 // Llamado a la funcion
 saludar()
 
@@ -22,7 +21,6 @@ saludar()
     saludo que no recibe ningún parámetro dentro de una constante.
     No puede ser modificable   
     */
-
 const saludo2=()=>{ console.log("Hola con const"); }
 saludo2();
 
@@ -42,7 +40,6 @@ LET: Es una variable que también podra cambiar su valor, pero solo vivirá(Func
 
 //Recibimos parametros que pasamos luego dentro de nuestro cuerpo y ejecutamos acciones 
 //con ellos
-
 const saludar1=(a,b,c)=> {
     console.log(a)
     console.log(b)
@@ -56,16 +53,79 @@ const calcular=(a,b,c)=>{
 }
 console.log(calcular(1,2,3))
 
-
 //Funciones dentro de funciones 
-
 //Devuelve un dato
 const fun1=(dato)=>{
     return dato//devolvemos
 }
 
 //Imprime un dato
-const fun2=(d)=>{
-    console.log(d)
-}
+const fun2=(d)=>{ console.log(d) }
 fun2(fun1("John"))
+
+//Juan Esteban Uran Sierra. Grupo 4A-4
+const func2=(valor)=>{
+    console.log(valor/3) 
+}
+
+const func1=(num1,num2,num3)=>{
+    return num1+num2+num3
+}
+func2(func1(4,5,6))
+
+let multiplicar=(num1,num2,num3) =>{
+    console.log(num1+num2*num3)
+}
+multiplicar(1,2,3)
+
+//Relizado por: Julian David Montero Gonzalez. Grupo 4A-4
+const sumar = (num1, num2) => {
+    if (num1 > 0 && num2 > 0) {
+        return Math.pow(num1, num2)
+    }
+    return `${num1} y ${num2} tienen que ser mayores`
+}
+const imprimir = res => {
+if (isNaN(res)) {
+    console.log(`${res} :(`)
+} else {
+    console.log(`El valor es ${res}`)
+}
+}
+
+imprimir(sumar(1, 7))
+
+//Ejercicio Funciones     Realizado por: Brandon Motta       Grupo Web 4
+
+function funcion1(c){
+    console.log("La cantidad de letras de la palabra ingresada es: " + c)
+}
+
+function cantLetras(palabra) {
+    let cantLetras = palabra.length;
+    return (cantLetras);
+}
+funcion1(cantLetras("Patata"));
+
+//Funciones (Jhon Sanabria)
+//Funcion Nombre con dos parametros de entrada
+const functName=(nombre,edad)=>{
+    return nombre,edad
+}
+// Funcion Edad 
+const functEdad=(fActual,fnacido)=>{
+    return fActual - fnacido
+}
+//llamadoa la funcion edad desde la funcion nombre
+console.log(functName('Felipe',functEdad(2021,2002)))
+
+// calculo IMC  Ruben Rodriguez. Grupo 4A-4
+const imc=(pesoKg, estaturaCm)=>{
+    return pesoKg/estaturaCm
+}
+
+const mostrar=(p)=>{
+    console.log(p)
+}
+
+mostrar(imc(80,182))
