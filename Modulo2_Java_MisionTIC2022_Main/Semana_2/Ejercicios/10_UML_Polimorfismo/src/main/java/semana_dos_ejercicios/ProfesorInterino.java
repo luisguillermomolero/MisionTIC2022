@@ -6,10 +6,10 @@ public class ProfesorInterino extends Profesor {
     
     private Calendar FechaComienzoInterinidad;
     
-    public ProfesorInterino(Calendar fechaComienzaInterinidad) {
-        super();
-        FechaComienzoInterinidad = fechaComienzaInterinidad; 
-    }
+    // public ProfesorInterino(Calendar fechaComienzaInterinidad) {
+    //     super();
+    //     FechaComienzoInterinidad = fechaComienzaInterinidad; 
+    // }
 
     public ProfesorInterino (String nombre, String apellidos, int edad, Calendar fechaComienzaInterinidad) {
         super(nombre, apellidos, edad);
@@ -20,7 +20,7 @@ public class ProfesorInterino extends Profesor {
         return FechaComienzoInterinidad; 
     }
 
-    //Polimorfismo en la forma de sobrescribir mostrarDatos de la clase "Persona"
+    //Polimorfismo en la forma de sobrescribir mostrarDatos de la clase "Profesor"
     public void mostrarDatos() { 
         System.out.println("Datos ProfesorInterino. Comienzo interinidad: " + FechaComienzoInterinidad.getTime().toString() );  
     }

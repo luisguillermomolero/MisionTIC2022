@@ -22,12 +22,12 @@ import java.util.*;
     *  Modif-Acceso: public, private, protected, final, static (var de clase), <sm>
     *  wrapper class = Tipo de dato inicia en Mayúscula, envuelve y convierte datos primitivos en objetos.
     */
-    private static final Double PI = 3.1416; 
-    private Integer contador = 0;
+    //private static final Double PI = 3.1416; 
+    //private Integer contador = 0;
 
     //Constructor por defecto
+
     private MiPrimeraClase(String nombre) {
-        System.out.print(nombre);
     }
 
     //Métodos
