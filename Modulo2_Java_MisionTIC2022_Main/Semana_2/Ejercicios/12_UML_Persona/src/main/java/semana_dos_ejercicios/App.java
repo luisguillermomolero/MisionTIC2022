@@ -18,16 +18,16 @@ public class App{
         e.setCarrera("Ingeniería de sistemas");
 
         pro.setNombre("Manuel Pepe Grillo");
-        pro.setMateria("ARquitectura del computador electrónico II");
+        pro.setMateria("Arquitectura del computador electrónico II");
         pro.setCargo("Docente Títular III");
 
         System.out.println("Vamos a imprimir el objeto \"p\" de la clase padre Persona:  ");
         System.out.printf("Nombre: %s,  Edad %d \n", p.getNombre(), p.getEdad());
         
-        System.out.print("Vamos a imprimir el objeto \"e\" de la clase hijo Estudiante:  ");
+        System.out.print("Vamos a imprimir el objeto \"e\" de la clase hija Estudiante:  ");
         System.out.printf("\nNombre: %s,  Carrera %s, Legajo %d \n", e.getNombre(), e.getCarrera(), e.getLegajo());
 
-        System.out.print("Vamos a imprimir el objeto \"e\" de la clase hijo Profesor:  ");
+        System.out.print("Vamos a imprimir el objeto \"e\" de la clase hija Profesor:  ");
         System.out.printf("\nNombre: %s,  Materia %s, Cargo %s \n", pro.getNombre(), pro.getMateria(), pro.getCargo());
     }
 }

@@ -1,14 +1,17 @@
 package semana_dos_ejercicios;
 
 //clase bombero
-public class Bombero
-{
+public class Bombero{
+
     //Declaracion de variables (Atributos, propiedades)
     private String nombre;
     private String apellido;
     private int edad;
 
     //contructor y parametros asignados
+    public Bombero(){
+    }
+
     public Bombero (String nombreRecibido, String apellidoRecibido, int edadRecibida)
     {
         nombre = nombreRecibido;

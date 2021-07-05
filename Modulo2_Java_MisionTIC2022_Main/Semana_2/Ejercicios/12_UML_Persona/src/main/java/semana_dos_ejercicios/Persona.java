@@ -22,12 +22,4 @@ public class Persona {
     public void setNombre(String val){
         this.nombre = val;
     }
-
-    
-
-
-
-
-
-    
 }

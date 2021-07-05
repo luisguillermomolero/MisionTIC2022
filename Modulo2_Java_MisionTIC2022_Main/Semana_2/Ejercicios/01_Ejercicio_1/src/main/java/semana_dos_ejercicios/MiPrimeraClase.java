@@ -22,8 +22,8 @@ import java.util.*;
     *  Modif-Acceso: public, private, protected, final, static (var de clase), <sm>
     *  wrapper class = Tipo de dato inicia en Mayúscula, envuelve y convierte datos primitivos en objetos.
     */
-    //private static final Double PI = 3.1416; 
-    //private Integer contador = 0;
+    // private static final Double PI = 3.1416; 
+    // private Integer contador = 0;
 
     //Constructor por defecto
 
@@ -42,6 +42,7 @@ import java.util.*;
         Scanner sc = new Scanner(System.in);
         System.out.println("Ingrese un número para sumarle a cinco: ");
         int numero = sc.nextInt();
+        sc.close();
         return "Método metodoString. \n El resultado es: " + (n + numero);
     }
 
@@ -55,7 +56,7 @@ import java.util.*;
         return sumaDos;
     }
 
-    int metodoEnteroTres(){
+    int MetodoEnteroTres(){
         int sumaDos = 20+20;
         return sumaDos;
     }
@@ -76,6 +77,6 @@ import java.util.*;
         System.out.println(ejemplos.metodoEntero());
         
         System.out.println("\nMétodo \"metodoEnteroDos\"\n El resultado es: " + ejemplos.metodoEnteroDos());
-        System.out.println("\nMétodo \"metodoEnteroTres\"\n El resultado es: " + ejemplos.metodoEnteroTres());
+        System.out.println("\nMétodo \"metodoEnteroTres\"\n El resultado es: " + ejemplos.MetodoEnteroTres());
     }
 }
