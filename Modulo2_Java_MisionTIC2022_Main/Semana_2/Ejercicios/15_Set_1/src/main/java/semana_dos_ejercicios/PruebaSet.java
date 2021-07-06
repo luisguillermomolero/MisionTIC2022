@@ -1,8 +1,10 @@
-//Desarrolle un programa que elimine las cadenas duplicadas de un objeto "List". 
-//Hacer uso del objeto HashSet.
-
+/* Desarrolle un programa que elimine las cadenas duplicadas de un objeto "List". 
+* hacer uso del objeto HashSet.
+*/
 
 package semana_dos_ejercicios;
+
+// import java.util.*;
 
 import java.util.List;
 import java.util.Arrays;
@@ -12,7 +14,7 @@ import java.util.Collection;
 
 public class PruebaSet {
     
-    private String colores[] = {"rojo", "blanco", "azul", "verde", "gris", "naranja", "carne", "blanco", "cyan", "gris", " naranja "};
+    private String colores[] = {"rojo", "blanco", "azul", "verde", "gris", "carne", "blanco", "cyan", "gris", " naranja "};
     
     public PruebaSet() {
         List<String> lista = Arrays.asList(colores);

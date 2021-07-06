@@ -1,17 +1,23 @@
 package semana_dos_ejercicios;
 
 public class Fecha {
+    
     private int dia;
     private int mes;
     private int ano;
 
+    //Constructor
     public Fecha(){
     }
+
+    //Constructor
     public Fecha(int d, int m, int a){
         setDia(d);
         setMes(m);
         setAno(a);
     }
+    
+    //setter
     public void setDia(int val){
         this.dia = val;
     }
@@ -21,6 +27,8 @@ public class Fecha {
     public void setAno(int val){
         this.ano = val;
     }
+    
+    //getter
     public int getDia(){
         return dia;
     }

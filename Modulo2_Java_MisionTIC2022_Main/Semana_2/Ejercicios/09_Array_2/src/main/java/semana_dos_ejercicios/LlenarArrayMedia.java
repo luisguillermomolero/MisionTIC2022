@@ -2,7 +2,6 @@ package semana_dos_ejercicios;
 
 import javax.swing.JOptionPane;
 
-
 public class LlenarArrayMedia {
 
     

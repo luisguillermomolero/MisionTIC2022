@@ -8,8 +8,8 @@ public class Profesor extends Persona {
     }
     
     public Profesor (String nombre, String apellidos, int edad) {
-        super(nombre, apellidos, edad);
-        IdProfesor = "Unknown";   
+        super(nombre, apellidos, edad); //atributos de su papa "Persona"
+        IdProfesor = "UnKnow";   
     }
 
     public void setIdProfesor (String IdProfesor) { 

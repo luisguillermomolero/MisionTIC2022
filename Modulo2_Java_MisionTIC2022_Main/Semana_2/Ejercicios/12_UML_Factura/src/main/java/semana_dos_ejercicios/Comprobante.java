@@ -6,13 +6,18 @@ public class Comprobante{
     private int numero;
     private Fecha fecha;
     
+    //Constructor
     public Comprobante(){
     }
+    
+    //Constructor
     public Comprobante(char t, int n, Fecha f){
         setTipo(t);
         setNumero(n);
         setFecha(f);
     }
+    
+    //setter
     public void setTipo(char val){
         this.tipo = val;
     }
@@ -22,6 +27,8 @@ public class Comprobante{
     public void setFecha(Fecha val){
         this.fecha = val;
     }
+    
+    //getter
     public char getTipo(){
         return tipo;
     }

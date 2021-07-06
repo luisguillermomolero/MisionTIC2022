@@ -6,15 +6,18 @@ public class Persona {
     private String apellidos; 
     private int edad;
 
+    //Constructor
     public Persona() { 
     }
 
+    //Constructor
     public Persona (String nombre, String apellidos, int edad) {
         this.nombre = nombre; 
         this.apellidos = apellidos; 
         this.edad = edad; 
     }
 
+    //getter de variables
     public String getNombre() { 
         return nombre;  
     }

@@ -8,16 +8,16 @@ enum Transporte{
 class Enumerados {
     public static void main(String[] args) {
         Transporte tp;
-        tp=Transporte.AVION;
+        // tp=Transporte.AVION;
 
-        System.out.println("Valor de tp: "+tp +"\n");
-        System.out.println();
+        // System.out.println("Valor de tp: "+tp +"\n");
+        // System.out.println();
 
-        tp=Transporte.TREN;
+        tp=Transporte.BARCO;
 
         //Comparación de 2 valores enum
-        if (tp==Transporte.TREN)
-            System.out.println("tp tiene el valor de TREN\n");
+        // if (tp==Transporte.CAMION)
+        //     System.out.println("tp tiene el valor de TREN\n");
 
         //enum para controlar sentencia switch
         switch(tp){

@@ -8,6 +8,7 @@ public class App {
     public static void main(String[] args) {
         
         ArrayList <Integer> listaEnteros = new ArrayList<>();
+        
         //var listaEnteros = new ArrayList<Integer>();
         listaEnteros.add(4);
         listaEnteros.add(5);
@@ -22,10 +23,10 @@ public class App {
 
         for (int i=0;i<=listaEnteros.size(); i++){
             if (listaEnteros.contains(buscar) == true){
-                System.out.println("Si esta");
+                System.out.println(buscar+" si esta");
                 break;
             }else{
-                System.out.println("No esta");
+                System.out.println(buscar + " no esta");
                 break;
             }
         }
@@ -35,10 +36,10 @@ public class App {
 
         for (int m=0;m<=listaEnteros.size();m++){
             if (listaEnteros.contains(buscar2) == true){
-                System.out.println("Esta en la posición: "+listaEnteros.indexOf(buscar2));
+                System.out.println(buscar2 +" esta en la posición: "+listaEnteros.indexOf(buscar2));
                 break;
             }else{
-                System.out.println("No esta");
+                System.out.println(buscar2 + " no esta");
                 break;
             }
         }

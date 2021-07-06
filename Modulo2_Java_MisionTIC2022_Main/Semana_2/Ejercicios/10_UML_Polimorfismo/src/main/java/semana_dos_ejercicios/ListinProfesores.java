@@ -6,6 +6,7 @@ public class ListinProfesores{
 
     private ArrayList <Profesor> listinProfesores;
 
+    //Constructor
     public ListinProfesores () {
         listinProfesores = new ArrayList <Profesor> (); 
     }

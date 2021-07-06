@@ -26,16 +26,16 @@ public class App {
         /*Creamos la Cola Indicando el tipo de dato*/
         Queue<Integer> cola=new LinkedList();
         /*Insertamos datos*/
-            cola.offer(3);
-            cola.add(14);
+            cola.offer(3); //insertar un elemento (mejor método)
+            cola.add(14);  //insertar otro elemento (lanza excepciones)
             cola.offer(12);
             cola.add(7);
             cola.offer(10);
         /*Impresion de la Cola llena con los datos*/
         System.out.println("Cola llena: " + cola);
         /*Estructura repetitiva para desencolar*/
-        while(cola.poll()!=null){//Desencolamos y el valor se compara con null
-            System.out.println(cola.peek());//Muestra el nuevo Frente
+        while(cola.poll()!=null){//Recuperar el primer elemento, si es null=vacia
+            System.out.println(cola.peek());//Muestra el primer elemento de la cola
         }
         /*Muestra null debido a que la cola ya esta vacia*/
         System.out.println(cola.peek());     
