@@ -2,10 +2,10 @@ package semana_dos_ejercicios;
 
 public class Estudiante extends Persona{
 
-    private String carrera;
+    private String carrera; 
     private int legajo;
 
-    public Estudiante(){
+    public Estudiante(){ 
     }
 
     public String getCarrera(){

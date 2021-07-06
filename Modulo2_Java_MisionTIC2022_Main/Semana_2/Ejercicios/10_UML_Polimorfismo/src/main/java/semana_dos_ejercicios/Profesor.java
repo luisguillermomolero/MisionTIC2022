@@ -4,10 +4,8 @@ public class Profesor extends Persona {
     
     private String IdProfesor;
     
-    // public Profesor () {
-    //     super();
-    //     IdProfesor = "Unknown";
-    // }
+    public Profesor () {
+    }
     
     public Profesor (String nombre, String apellidos, int edad) {
         super(nombre, apellidos, edad);

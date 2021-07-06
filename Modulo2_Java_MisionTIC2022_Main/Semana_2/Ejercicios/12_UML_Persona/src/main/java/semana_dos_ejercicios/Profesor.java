@@ -20,5 +20,4 @@ public class Profesor extends Persona{
     public void setCargo(String val){
         this.cargo = val;
     }
-
 }

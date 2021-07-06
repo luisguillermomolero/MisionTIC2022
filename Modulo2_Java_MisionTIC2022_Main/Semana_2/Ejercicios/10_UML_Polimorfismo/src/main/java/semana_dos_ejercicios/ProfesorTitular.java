@@ -6,10 +6,8 @@ public class ProfesorTitular extends Profesor {
     
     private Calendar FechaComienzoSemestre;
     
-    // public ProfesorTitular(Calendar fechaComienzaSemestre) {
-    //     super();
-    //     FechaComienzoSemestre = fechaComienzaSemestre; 
-    // }
+    public ProfesorTitular(Calendar fechaComienzaSemestre) {
+    }
 
     public ProfesorTitular (String nombre, String apellidos, int edad, Calendar fechaComienzaSemestre) {
         super(nombre, apellidos, edad);

@@ -16,13 +16,13 @@ import java.util.*;
  */
 
  //Nombre de la clase que se explica por si solo; CamelCase. Mismo nombre que el archivo.java
- public final class MiPrimeraClase { 
+ public class MiPrimeraClase { 
     
     /**Atributos: de primero, 1 por linea, inician en Mayúscula, declarar "private".
     *  Modif-Acceso: public, private, protected, final, static (var de clase), <sm>
     *  wrapper class = Tipo de dato inicia en Mayúscula, envuelve y convierte datos primitivos en objetos.
     */
-    // private static final Double PI = 3.1416; 
+    // private static final Double PI = 3.1416;
     // private Integer contador = 0;
 
     //Constructor por defecto

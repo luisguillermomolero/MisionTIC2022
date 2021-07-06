@@ -6,10 +6,8 @@ public class ProfesorInterino extends Profesor {
     
     private Calendar FechaComienzoInterinidad;
     
-    // public ProfesorInterino(Calendar fechaComienzaInterinidad) {
-    //     super();
-    //     FechaComienzoInterinidad = fechaComienzaInterinidad; 
-    // }
+    public ProfesorInterino(Calendar fechaComienzaInterinidad) {
+    }
 
     public ProfesorInterino (String nombre, String apellidos, int edad, Calendar fechaComienzaInterinidad) {
         super(nombre, apellidos, edad);

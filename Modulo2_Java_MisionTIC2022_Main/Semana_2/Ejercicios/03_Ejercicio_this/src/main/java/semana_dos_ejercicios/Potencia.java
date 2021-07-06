@@ -18,6 +18,7 @@ public class Potencia {
     //     if (exp >= 0){
     //         this.valor = this.valor * Math.pow(base,exp);
     //     } else{
+    //          valor = 0.0;    
     //         return ;
     //     }
     // }
@@ -32,6 +33,7 @@ public class Potencia {
         if (e >= 0){
             valor = valor * Math.pow(b,e);
         } else{
+            valor = 0.0;
             return ;
         }
     }
@@ -43,7 +45,7 @@ public class Potencia {
 
     
     public static void main(String[] args) {
-        Potencia nuevaPotencia = new Potencia(4.0, 2);
+        Potencia nuevaPotencia = new Potencia(4.0, -5);
         System.out.println(nuevaPotencia.valor);
     }
 }

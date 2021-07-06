@@ -1,7 +1,6 @@
 //Realice un diagrama de clases en función del registro de personas que a posteriori podrán ser estudiantes o profesores de una institución universitaria (IES).
 
 package semana_dos_ejercicios;
-//import Clases.*;
 
 public class App{
     public static void main(String[] args){
