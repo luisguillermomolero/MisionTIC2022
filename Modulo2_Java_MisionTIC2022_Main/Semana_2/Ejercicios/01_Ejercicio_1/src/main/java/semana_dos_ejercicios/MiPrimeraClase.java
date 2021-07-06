@@ -16,7 +16,7 @@ import java.util.*;
  */
 
  //Nombre de la clase que se explica por si solo; CamelCase. Mismo nombre que el archivo.java
- public class MiPrimeraClase { 
+ public final class MiPrimeraClase { 
     
     /**Atributos: de primero, 1 por linea, inician en Mayúscula, declarar "private".
     *  Modif-Acceso: public, private, protected, final, static (var de clase), <sm>
@@ -27,7 +27,7 @@ import java.util.*;
 
     //Constructor por defecto
 
-    private MiPrimeraClase(String nombre) {
+    private MiPrimeraClase() {
     }
 
     //Métodos
@@ -71,7 +71,7 @@ import java.util.*;
         System.out.println("Hello World!");
 
         //Instanciar la clase "MiPrimeraClase" para llamar a sus métodos
-        MiPrimeraClase ejemplos = new MiPrimeraClase("Constructor\n");
+        MiPrimeraClase ejemplos = new MiPrimeraClase();
         
         System.out.println(ejemplos.metodoString(5));
         System.out.println(ejemplos.metodoEntero());
