@@ -7,52 +7,63 @@ public class Factura extends Comprobante {
     private Float total;
     private Cliente mCliente;
 
-    public Factura(){
+    public Factura() {
     }
-    
-    public Factura(char t, int n, Fecha f, Cliente cli){
-        super(t,n,f);
+
+    public Factura(char t, int n, Fecha f, Cliente cli) {
+        super(t, n, f);
+        total = 0F;
         setCliente(cli);
     }
-    public void setTotal(Float val){
+
+    public void setTotal(Float val) {
         this.total = val;
     }
-    public void setCliente(Cliente val){
+
+    public void setCliente(Cliente val) {
         this.mCliente = val;
     }
-    public Cliente getCliente(){
+
+    public Cliente getCliente() {
         return mCliente;
     }
-    public Float getTotal(){
+
+    public Float getTotal() {
         return total;
     }
-    public ArrayList<Producto> getProducto(){
+
+    public ArrayList<Producto> getProducto() {
         return mProducto;
     }
-    public void setProducto (ArrayList<Producto> val){
+
+    public void setProducto(ArrayList<Producto> val) {
         this.mProducto = val;
     }
-    public void agregarProducto(Producto p){
+
+    public void agregarProducto(Producto p) {
+        if (mProducto == null) {
+            mProducto = new ArrayList<>();
+        }
         mProducto.add(p);
         setTotal(getTotal() + p.getPrecio());
     }
-    public void mostrarProductos(){
+
+    public void mostrarProductos() {
         Iterator<Producto> iter = mProducto.iterator();
         while (iter.hasNext()) {
             Producto p = iter.next();
-            System.out.printf("Codigo: %d Descripcion: %s Precio: %5.2f \n",
-            p.getCodigo(), p.getDescripcion(), p.getPrecio());
+            System.out.printf("Codigo: %d Descripcion: %s Precio: %5.2f \n", p.getCodigo(), p.getDescripcion(),
+                    p.getPrecio());
         }
     }
-    public void mostrar(){
-        System.out.printf("Tipo: %c Número: %d Fecha: %d/%d/%d\n",
-        getTipo(), getNumero(),
-        getFecha().getDia(), getFecha().getMes(), getFecha().getAno());
+
+    public void mostrar() {
+        System.out.printf("Tipo: %c Número: %d Fecha: %d/%d/%d\n", getTipo(), getNumero(), getFecha().getDia(),
+                getFecha().getMes(), getFecha().getAno());
         System.out.printf("Cliente: \n");
-        System.out.printf("Codigo: %d Razon Social: %s \n",
-        mCliente.getCodigo(), mCliente.getRazonSocial());
+        System.out.printf("Codigo: %d Razon Social: %s \n", mCliente.getCodigo(), mCliente.getRazonSocial());
         System.out.printf("Productos: \n");
         mostrarProductos();
-        System.out.printf("Total: %6.2f \n",getTotal());
+        System.out.printf("Total: %6.2f \n", getTotal());
     }
 }
