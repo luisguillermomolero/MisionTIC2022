@@ -6,22 +6,18 @@ public class Fecha{
     private int mes;
     private int anio;
 
+    //Constructor
     public Fecha(){
     }
+
+    //Constructor
     public Fecha (int dia, int mes, int anio) {
         setDia(dia);
         setMes(mes);
         setAnio(anio);
     }
-    public int getDia(){
-        return dia;
-    }
-    public int getMes(){
-        return mes;
-    }
-    public int getAnio(){
-        return anio;
-    }
+
+    //setter
     public void setDia(int val){
         this.dia = val;
     }
@@ -30,5 +26,16 @@ public class Fecha{
     }
     public void setAnio(int val){
         this.anio = val;
+    }
+
+    //getter
+    public int getDia(){
+        return dia;
+    }
+    public int getMes(){
+        return mes;
+    }
+    public int getAnio(){
+        return anio;
     }
 }

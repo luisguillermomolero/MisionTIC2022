@@ -13,7 +13,7 @@ class Enumerados {
         // System.out.println("Valor de tp: "+tp +"\n");
         // System.out.println();
 
-        tp=Transporte.BARCO;
+        tp=Transporte.CAMION;
 
         //Comparación de 2 valores enum
         // if (tp==Transporte.CAMION)

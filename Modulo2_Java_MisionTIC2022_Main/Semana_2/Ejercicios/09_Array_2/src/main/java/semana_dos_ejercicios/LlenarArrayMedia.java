@@ -8,7 +8,7 @@ public class LlenarArrayMedia {
   public static void main(String[] args) {
 
     int valor = 0;
-    valor= Integer.parseInt(JOptionPane.showInputDialog("Ingrese cantidad de elementos para el promedio"));
+    valor= Integer.parseInt(JOptionPane.showInputDialog("Ingrese cantidad de elementos para el calculo del promedio"));
 
     int [] numeros = new int[valor];
     // Declaracion variable

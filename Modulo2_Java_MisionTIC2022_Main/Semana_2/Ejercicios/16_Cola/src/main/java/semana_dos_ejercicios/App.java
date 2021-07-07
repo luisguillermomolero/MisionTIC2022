@@ -1,7 +1,4 @@
-/**Colas: Colas en Java con Queue: En Java podemos encontrar variadas formas de crear Colas en pocas lineas de código, un ejemplo es una de sus Interfaces que tiene como nombre “Queue”
-
-Métodos de Queue para manejo de Colas en Java
-con la cual podemos crear Colas y que contiene los siguientes métodos para el uso de las mismas.
+/**Colas en Java con Queue: En Java podemos encontrar variadas formas de crear Colas, un ejemplo, es una de sus Interfaces que tiene como nombre “Queue”.  Los métodos de Queue para manejo de Colas en Java son los siguientes:
 
 Para Insertar:
 – add(e)

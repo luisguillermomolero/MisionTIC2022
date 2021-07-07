@@ -10,7 +10,5 @@ public class Main {
         recibo.setDetalle("Pago servicios mensajeria");
         recibo.setTotal(5000);
         recibo.Mostrar();
-
-
     }
 }

@@ -15,15 +15,16 @@ public enum Equipo
 		PORTERO, DEFENSA, CENTROCAMPISTA, DELANTERO
 	}
 
+	//setter
 	private Equipo (String nombreClub, int puestoLiga){
 		this.nombreClub = nombreClub;
 		this.puestoLiga = puestoLiga;
 	}
 
+	//getter
 	public String getNombreClub() {
 		return nombreClub;
 	}
-
 	public int getPuestoLiga() {
 		return puestoLiga;
 	}	
