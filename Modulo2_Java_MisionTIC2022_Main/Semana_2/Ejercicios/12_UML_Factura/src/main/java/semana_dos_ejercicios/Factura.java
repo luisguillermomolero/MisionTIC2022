@@ -3,25 +3,17 @@ package semana_dos_ejercicios;
 import java.util.*;
 
 public class Factura extends Comprobante {
-    
     private ArrayList<Producto> mProducto;
     private Float total;
     private Cliente mCliente;
 
-    //Construtor
     public Factura() {
     }
 
-    //Construtor
     public Factura(char t, int n, Fecha f, Cliente cli) {
         super(t, n, f);
         total = 0F;
         setCliente(cli);
-    }
-
-    //setter
-    public void setProducto(ArrayList<Producto> val) {
-        this.mProducto = val;
     }
 
     public void setTotal(Float val) {
@@ -32,19 +24,22 @@ public class Factura extends Comprobante {
         this.mCliente = val;
     }
 
-    //getter
-    public ArrayList<Producto> getProducto() {
-        return mProducto;
+    public Cliente getCliente() {
+        return mCliente;
     }
 
     public Float getTotal() {
         return total;
     }
 
-    public Cliente getCliente() {
-        return mCliente;
+    public ArrayList<Producto> getProducto() {
+        return mProducto;
     }
-    
+
+    public void setProducto(ArrayList<Producto> val) {
+        this.mProducto = val;
+    }
+
     public void agregarProducto(Producto p) {
         if (mProducto == null) {
             mProducto = new ArrayList<>();
@@ -58,7 +53,7 @@ public class Factura extends Comprobante {
         while (iter.hasNext()) {
             Producto p = iter.next();
             System.out.printf("Codigo: %d Descripcion: %s Precio: %5.2f \n", p.getCodigo(), p.getDescripcion(),
-            p.getPrecio());
+                    p.getPrecio());
         }
     }
 
