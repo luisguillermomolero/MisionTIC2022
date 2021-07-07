@@ -11,6 +11,7 @@ class DeDos implements Series {
     }
 
 
+    
     public int getSiguiente() {
         anterior=valor;
         valor+=2;

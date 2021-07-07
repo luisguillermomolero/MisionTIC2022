@@ -7,6 +7,10 @@ public class Potencia {
     private int e;
     private Double valor;
         
+    //Constructor
+    private Potencia(){
+    }
+
     //Constructor de la clase
     // private Potencia(double base, int exp){
 
@@ -45,7 +49,7 @@ public class Potencia {
 
     
     public static void main(String[] args) {
-        Potencia nuevaPotencia = new Potencia(4.0, -5);
+        Potencia nuevaPotencia = new Potencia(2.0, 0);
         System.out.println(nuevaPotencia.valor);
     }
 }
