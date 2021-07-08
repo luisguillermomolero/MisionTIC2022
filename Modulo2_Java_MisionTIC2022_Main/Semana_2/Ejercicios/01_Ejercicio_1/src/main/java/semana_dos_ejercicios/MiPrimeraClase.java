@@ -8,7 +8,7 @@ import java.util.*;
  *  <Métodos>
  * }
  * 
- * public: todos tienen acceso
+ * public: todos tienen acceso...
  * final: Unica clase sin subclases
  * 
  * Constructor por defecto, como?... tiene el mismo nombre de la clase
