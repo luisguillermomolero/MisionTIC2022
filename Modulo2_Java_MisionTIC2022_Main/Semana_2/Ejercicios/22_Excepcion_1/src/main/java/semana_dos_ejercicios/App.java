@@ -15,9 +15,6 @@ public class App {
         }
         finally {
             System.out.println("Instrucciones a ejecutar finalmente tanto si se producen errores como si no.");
-
         }
-
     }
-
 }

@@ -3,6 +3,7 @@ package semana_dos_ejercicios;
 import java.util.*;
 
 public class Factura extends Comprobante {
+
     private ArrayList<Producto> mProducto;
     private Float total;
     private Cliente mCliente;
@@ -16,6 +17,7 @@ public class Factura extends Comprobante {
         setCliente(cli);
     }
 
+    //setter
     public void setTotal(Float val) {
         this.total = val;
     }

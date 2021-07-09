@@ -1,7 +1,11 @@
-package semana_dos_ejercicios;
+package semana_dos_ejercicios; //nombre del package
 
-public class Recibo extends Comprobante{
+//import 
+//import
 
+public class Recibo extends Comprobante{  //Definicion clara de la clase/subclase
+
+    //Atributos
     private Proveedor proveedor;
     private float total;
     private String detalle;

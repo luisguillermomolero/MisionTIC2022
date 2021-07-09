@@ -12,6 +12,8 @@ public class Fecha {
         setMes(m);
         setAno(a);
     }
+
+    //setter
     public void setDia(int val){
         this.dia = val;
     }
@@ -21,6 +23,7 @@ public class Fecha {
     public void setAno(int val){
         this.ano = val;
     }
+    //getter
     public int getDia(){
         return dia;
     }

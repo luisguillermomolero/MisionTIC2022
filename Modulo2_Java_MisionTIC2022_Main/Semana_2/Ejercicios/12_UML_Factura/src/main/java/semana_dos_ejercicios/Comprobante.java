@@ -13,6 +13,7 @@ public class Comprobante{
         setNumero(n);
         setFecha(f);
     }
+    //setter
     public void setTipo(char val){
         this.tipo = val;
     }
@@ -22,6 +23,7 @@ public class Comprobante{
     public void setFecha(Fecha val){
         this.fecha = val;
     }
+    //getter
     public char getTipo(){
         return tipo;
     }

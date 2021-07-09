@@ -11,12 +11,14 @@ public class Cliente{
         setCodigo(c);
         setRazonSocial(r);
     }
+    //setter
     public void setCodigo(int val){
         this.codigo = val;
     }
     public void setRazonSocial(String val){
         this.razonSocial = val;
     }
+    //getter
     public int getCodigo(){
         return codigo;
     }
