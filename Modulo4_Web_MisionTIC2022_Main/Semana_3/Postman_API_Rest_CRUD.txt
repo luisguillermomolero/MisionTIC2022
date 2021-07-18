@@ -1,5 +1,0 @@
-GET: http://localhost:4000/students
-POST: /students/create-student
-GET: /students/edit-student/id
-PUT: /students/update-student/id
-DELETE: /students/delete-student/id
