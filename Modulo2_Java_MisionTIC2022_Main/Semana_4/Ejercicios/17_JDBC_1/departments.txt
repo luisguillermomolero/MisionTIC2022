@@ -1,0 +1,5 @@
+1;Administrativa
+2;Financiera
+3;Compras
+4;Ventas
+5;Inventario
