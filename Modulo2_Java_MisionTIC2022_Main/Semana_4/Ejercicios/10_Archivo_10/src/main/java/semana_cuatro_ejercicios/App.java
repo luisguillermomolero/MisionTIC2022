@@ -15,7 +15,8 @@ public final class App {
             if (archivo.exists()) {
                 Scanner lector = new Scanner(archivo);
                 System.out.println("Números del archivo");
-                while (lector.hasNext()) {
+                while (lector.hasNext()) { //observador de si hay o no elementos agregados
+                    //Separa la cadena traves de un delimitador (espacio en blanco)
                     StringTokenizer numeros = new StringTokenizer(lector.next(), ",");
                     while (numeros.hasMoreTokens()) {
                     System.out.print(numeros.nextToken() + "\t");
