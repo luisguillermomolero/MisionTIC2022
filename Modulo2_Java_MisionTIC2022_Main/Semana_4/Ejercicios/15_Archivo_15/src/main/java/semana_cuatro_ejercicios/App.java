@@ -31,7 +31,8 @@ public class App {
 
         matriz = new double[filas][columnas]; //se crea la matriz
        
-        for (i = 0; i < filas; i++) {         //lectura de datos por teclado                                      
+        //Lectura de datos por teclado
+        for (i = 0; i < filas; i++) {                                       
             for (j = 0; j < columnas; j++) {
                 System.out.print("matriz[" + i + "][" + j + "]: ");
                 matriz[i][j] = sc.nextDouble();
@@ -40,6 +41,8 @@ public class App {
         try {
             //crear el fichero de salida
             fos = new FileOutputStream("matriz.dat");
+            
+            //Procesar datos de salida
             salida = new DataOutputStream(fos);
 
             //escribir el número de filas y columnas en el fichero                                                

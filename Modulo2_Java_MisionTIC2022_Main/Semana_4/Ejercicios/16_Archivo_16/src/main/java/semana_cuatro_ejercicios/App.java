@@ -15,8 +15,8 @@ public class App {
         DataInputStream entrada = null;
         int filas, columnas, i, j;
         try {
-            fis = new FileInputStream("matriz.dat");
-            entrada = new DataInputStream(fis);
+            fis = new FileInputStream("matriz.dat"); //crea el archivo .dat
+            entrada = new DataInputStream(fis);   // leer datos (primitivos)
             filas = entrada.readInt();            //se lee el primer entero del fichero                           
             columnas = entrada.readInt();         //se lee el segundo entero del fichero
             for (i = 0; i < filas; i++) {
