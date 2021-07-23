@@ -13,7 +13,7 @@ public static void main(String args[]) {
             System.out.print(caracter);
             numBytes++;
         } while (caracter != '\n');
-        System.err.printf("%d bytes leidos %n", numBytes);
+        System.out.printf("%d bytes leidos %n", numBytes);
         } catch (IOException e) {
             System.err.println(e);
         }
