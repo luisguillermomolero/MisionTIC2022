@@ -11,7 +11,9 @@ import javax.persistence.Table;
 @Entity
 @Table(name = "departments")
 public class Department implements Serializable {
-    @Id
+    //Indica que ID es la clave primaria
+    @Id 
+    //Para simular una secuencia almacenado y actualizacion (hibernate)en una tabla de base de dato = auto
     @GeneratedValue(strategy = GenerationType.AUTO)
     private Integer id;
     private String name;
@@ -44,6 +46,7 @@ public class Department implements Serializable {
         this.name = name;
     }
 
+    //Anula este método en la superclase (Polimorfismo)
     @Override
     public String toString() {
         return name;

@@ -42,9 +42,9 @@ public class EmployeeDao {
     public Employee save(Employee employee) {
         var em = emf.createEntityManager();
         try {
-            em.getTransaction().begin();
-            em.persist(employee);
-            em.getTransaction().commit();
+            em.getTransaction().begin(); // Iniciar transacción
+            em.persist(employee); //persiste el objeto empleado.Cambio/estado
+            em.getTransaction().commit(); //Actualizar cambios en bd
         } finally {
             em.close();
         }

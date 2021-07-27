@@ -13,12 +13,15 @@ import javax.persistence.Table;
 @Entity
 @Table(name = "employees")
 public class Employee implements Serializable {
-    @Id
+    //Indica que ID es la clave primaria
+    @Id 
+    //Para simular una secuencia almacenado y actualizacion (hibernate)en una tabla de base de dato = auto
     @GeneratedValue(strategy = GenerationType.AUTO)
     private Integer id;
     private String name;
     private String email;
 
+    //Relacion muchos a uno
     @ManyToOne(fetch = FetchType.EAGER)
     private Department department;
 

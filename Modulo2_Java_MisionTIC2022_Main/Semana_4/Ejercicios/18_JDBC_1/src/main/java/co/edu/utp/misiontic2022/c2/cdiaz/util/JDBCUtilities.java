@@ -23,7 +23,8 @@ public class JDBCUtilities {
         
         // .Statement Provee métodos para que los desarrolladores puedan ejecutar sentencias SQL
         var statement = connection.createStatement();
-        statement.execute("create table departments (id integer not null," + " name varchar(50) not null," 
+        statement.execute("create table departments (id integer not null," 
+                + " name varchar(50) not null," 
                 + " primary key (id))");
                 
         statement.execute("insert into departments values (1, 'Administrativa')");
@@ -31,6 +32,7 @@ public class JDBCUtilities {
         statement.execute("insert into departments values (3, 'Compras')");
         statement.execute("insert into departments values (4, 'Ventas')");
         statement.execute("insert into departments values (5, 'Inventario')");
+        statement.execute("insert into departments values (6, 'Manufactura')");
 
         statement.execute("create table employees ( id integer not null, name varchar(50) not null,"
                 + " email varchar(100), department_id integer, primary key (id),"

@@ -212,8 +212,7 @@ public class EmployeeMenu {
         System.out.println();
         System.out.println("ID\tNOMBRE\tEMAIL\tDEPARTAMENTO");
         for (Employee employee : employees) {
-            System.out.printf("%d\t%s\t%s\t%s %n", employee.getId(), employee.getName(), employee.getEmail(),
-                    employee.getDepartment().getName());
+            System.out.printf("%d\t%s\t%s\t%s %n", employee.getId(), employee.getName(), employee.getEmail(), employee.getDepartment().getName());
         }
     }
 
