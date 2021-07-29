@@ -11,11 +11,11 @@ public class App {
         JFrame f = new JFrame("Button Example");
         final JTextField tf = new JTextField();
         tf.setBounds(50, 50, 150, 20);
-        JButton b = new JButton("Click Here");
+        JButton b = new JButton("Click aquí");
         b.setBounds(50, 100, 95, 30);
         b.addActionListener(new ActionListener() {
             public void actionPerformed(ActionEvent e) {
-                tf.setText("Bienvenido a Javatpoint.");
+                tf.setText("Hello World.");
             }
         });
         f.add(b);
