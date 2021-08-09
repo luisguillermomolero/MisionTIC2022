@@ -1,0 +1,52 @@
+================================================================================
+Casos públicos
+================================================================================
+Caso 1:
+        NuevoProyecto np = new NuevoProyecto();
+        System.out.println(np.calcularInteresSimple());
+        System.out.println(np.calcularInteresCompuesto());
+        System.out.println(np.compararInversion(6,10000000,1.2));
+        
+Respuesta:
+0.0
+0.0
+21949.0
+
+--------------------------------------------------------------------------------
+Caso 2:
+        NuevoProyecto np2 = new NuevoProyecto(6,10000000.0,1.2);
+        System.out.println(np2.calcularInteresSimple());
+        System.out.println(np2.calcularInteresCompuesto());
+        System.out.println(np2.compararInversion());
+
+Respuesta:
+720000.0
+741949.0
+21949.0
+--------------------------------------------------------------------------------
+================================================================================
+Casos privados
+================================================================================
+Caso 3:
+        NuevoProyecto np3 = new NuevoProyecto();
+        System.out.println(np3.calcularInteresSimple());
+        System.out.println(np3.calcularInteresCompuesto());
+        System.out.println(np3.compararInversion(24,6000000,1.9));
+
+
+Respuesta:
+0.0
+0.0
+690092.0
+--------------------------------------------------------------------------------
+Caso 4:
+        NuevoProyecto np4 = new NuevoProyecto(12,10000000,0.9);
+        System.out.println(np4.calcularInteresSimple());
+        System.out.println(np4.calcularInteresCompuesto());
+        System.out.println(np4.compararInversion());Respuesta:
+
+Respuesta:
+1080000.0
+1135097.0
+55097.0
+--------------------------------------------------------------------------------

@@ -1,0 +1,41 @@
+================================================================================
+Casos públicos
+================================================================================
+Caso 1:
+		VistaRequerimientosReto4.requerimiento1();       
+
+Respuesta:
+
+*** Lideres con mayor salario ***
+ID_Lider  Nombre  Primer_Apellido
+      9  Jorge   Gomez
+      17  Paul   Jimenez
+      19  Paul   Perez 
+--------------------------------------------------------------------------------
+Caso 2:
+		VistaRequerimientosReto4.requerimiento3();
+
+
+Respuesta:
+
+*** Lideres proyectos emblemáticos ***
+Id_Lider Id_Proyecto Id_Tipo
+      18         134       4
+      20         133       3
+      27         132       2
+      35         130       2
+      41         131       4
+--------------------------------------------------------------------------------
+Caso 3:
+		VistaRequerimientosReto4.requerimiento4();
+
+
+Respuesta:
+
+*** Productos importados ***
+El producto de ID 13 de descripción: Linoleo de tipo importado(a), tiene un precio de 2227
+El producto de ID 14 de descripción: Bambu de tipo importado(a), tiene un precio de 1986
+El producto de ID 16 de descripción: Poliestireno de tipo importado(a), tiene un precio de 2163
+El producto de ID 19 de descripción: Acrilicos de tipo importado(a), tiene un precio de 2156
+--------------------------------------------------------------------------------
+

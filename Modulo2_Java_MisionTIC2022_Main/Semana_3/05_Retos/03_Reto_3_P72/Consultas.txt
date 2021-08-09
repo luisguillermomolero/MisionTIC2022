@@ -1,0 +1,79 @@
+Consulta 1:
+SELECT l.ID_Lider, l.Nombre, l.Primer_Apellido FROM Lider l WHERE Salario >= 100000 AND Ciudad_Residencia = 'Bucaramanga'  ORDER BY l.ID_Lider;
+
+Resultado1:
+ID_Lider  Nombre  Primer_Apellido
+--------  ------  ---------------
+8         Carlos  Rodriguez
+29        Jorge   Jimenez
+47        Juana   Ocampo
+
+**************************************************************
+
+Consulta 2:
+SELECT l.Nombre, l.Primer_Apellido, p.Constructora, t.Codigo_Tipo, p.Fecha_Inicio FROM Lider l JOIN Proyecto p ON l.ID_Lider = p.ID_Lider JOIN Tipo t ON t.ID_Tipo = p.ID_Tipo WHERE t.Codigo_Tipo = 321 AND l.Nombre = 'Bart' AND l.Primer_Apellido = 'Linares' ORDER BY p.Fecha_Inicio ;
+
+Resultado2:
+Nombre  Primer_Apellido  Constructora      Codigo_Tipo  Fecha_Inicio
+------  ---------------  ----------------  -----------  ------------
+Bart    Linares          Ingenieros Ltda.  321          2019-09-09
+Bart    Linares          Hermanos Gallego  321          2020-12-07
+
+
+**************************************************************
+Consulta 3:
+SELECT ID_Lider, ID_Proyecto, ID_Tipo FROM Proyecto p WHERE ID_Proyecto >= 60 AND ID_Proyecto < 70 GROUP BY ID_Lider ORDER BY ID_Lider;
+
+Resultado3:
+ID_Lider  ID_Proyecto  ID_Tipo
+--------  -----------  -------
+3         60           1
+9         68           1
+10        65           1
+18        67           2
+25        69           1
+28        64           3
+33        62           2
+34        66           1
+40        61           4
+43        63           4
+
+**************************************************************
+Consulta 4:
+SELECT "El producto de ID " || ID_MaterialConstruccion || " de descripción: " || Nombre_Material || " de tipo importado(a), tiene un precio  de " || Precio_Unidad FROM MaterialConstruccion mc WHERE Importado = 'Si' AND Precio_Unidad >= 1400 ORDER BY ID_MaterialConstruccion;
+
+Resultado4:
+"El producto de ID " || ID_MaterialConstruccion || " de descripción: " || Nombre_Material || " de tipo importado(a), tiene un precio  de " || Precio_Unidad
+-----------------------------------------------------------------------------------------------------------------------------------------------------------
+El producto de ID 6 de descripción: Acero de tipo importado(a), tiene un precio  de 1519
+El producto de ID 13 de descripción: Linoleo de tipo importado(a), tiene un precio  de 2227
+El producto de ID 14 de descripción: Bambu de tipo importado(a), tiene un precio  de 1986
+El producto de ID 16 de descripción: Poliestireno de tipo importado(a), tiene un precio  de 2163
+El producto de ID 19 de descripción: Acrilicos de tipo importado(a), tiene un precio  de 2156
+
+**************************************************************
+Consulta 5:
+SELECT p.ID_Lider, p.ID_Proyecto, p.Constructora FROM Proyecto p GROUP BY p.ID_Lider HAVING p.ID_Lider > 33 ORDER BY p.ID_Lider ;
+
+Resultado5:
+ID_Lider  ID_Proyecto  Constructora
+--------  -----------  ---------------------
+34        37           Pegaso
+35        29           Ingenieros Ltda.
+36        1            Arquitectura S.A.
+37        56           Edificios y Edificios
+38        9            Arquitectura S.A.
+39        32           Arquitectura S.A.
+40        28           Arquitectura S.A.
+41        49           Hermanos Gallego
+42        3            Hermanos Gallego
+43        10           Ingenieros Ltda.
+44        80           Ingenieros Ltda.
+45        15           Arquitectura S.A.
+46        5            Ingenieros Ltda.
+47        34           Hermanos Gallego
+48        8            Hermanos Gallego
+49        102          Arquitectura S.A.
+50        7            Arquitectura S.A.
+
+**************************************************************

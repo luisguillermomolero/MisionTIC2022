@@ -1,0 +1,48 @@
+================================================================================
+Casos públicos
+================================================================================
+Caso 1:
+		VistaRequerimientosReto4.requerimiento1();       
+
+Respuesta:
+
+*** Lideres con mayor salario ***
+ID_Lider  Nombre  Primer_Apellido
+      36  Libia   Pelaez  
+      41  Carla   Barrera 
+--------------------------------------------------------------------------------
+Caso 2:
+		VistaRequerimientosReto4.requerimiento3();
+
+
+Respuesta:
+
+*** Lideres proyectos emblemáticos ***
+Id_Lider Id_Proyecto Id_Tipo
+      1         189       5
+      3         192       5
+      4         186       1
+      7         180       4
+      13         190       1
+      16         181       4
+      17         182       4
+      21         191       4
+      24         184       3
+      30         188       2
+      32         194       1
+      34         183       2
+      36         185       3
+      39         193       5
+--------------------------------------------------------------------------------
+Caso 3:
+		VistaRequerimientosReto4.requerimiento4();
+
+
+Respuesta:
+
+*** Productos importados ***
+El producto de ID 13 de descripción: Linoleo de tipo importado(a), tiene un precio de 2227
+El producto de ID 16 de descripción: Poliestireno de tipo importado(a), tiene un precio de 2163
+El producto de ID 19 de descripción: Acrilicos de tipo importado(a), tiene un precio de 2156
+--------------------------------------------------------------------------------
+

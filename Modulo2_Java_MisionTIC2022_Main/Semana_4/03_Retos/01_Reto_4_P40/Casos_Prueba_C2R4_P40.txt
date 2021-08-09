@@ -1,0 +1,51 @@
+================================================================================
+Casos públicos
+================================================================================
+Caso 1:
+		VistaRequerimientosReto4.requerimiento1();       
+
+Respuesta:
+
+*** Lideres con mayor salario ***
+ID_Lider  Nombre  Primer_Apellido
+      20  Jorge   Gomez  
+      32  Libia   Pelaez  
+      50  Carlos   Jimenez 
+--------------------------------------------------------------------------------
+Caso 2:
+		VistaRequerimientosReto4.requerimiento3();
+
+
+Respuesta:
+
+*** Lideres proyectos emblemáticos ***
+Id_Lider Id_Proyecto Id_Tipo
+      17         136       5
+      18         134       4
+      20         133       3
+      26         135       3
+      27         132       2
+      28         139       1
+      35         130       2
+      37         138       4
+      41         131       4
+--------------------------------------------------------------------------------
+Caso 3:
+		VistaRequerimientosReto4.requerimiento4();
+
+
+Respuesta:
+
+*** Productos importados ***
+El producto de ID 1 de descripción: Granito de tipo importado(a), tiene un precio de 1130
+El producto de ID 3 de descripción: Cemento de tipo importado(a), tiene un precio de 1278
+El producto de ID 4 de descripción: Ladrillo de tipo importado(a), tiene un precio de 1011
+El producto de ID 6 de descripción: Acero de tipo importado(a), tiene un precio de 1519
+El producto de ID 8 de descripción: Aluminio de tipo importado(a), tiene un precio de 1187
+El producto de ID 13 de descripción: Linoleo de tipo importado(a), tiene un precio de 2227
+El producto de ID 14 de descripción: Bambu de tipo importado(a), tiene un precio de 1986
+El producto de ID 16 de descripción: Poliestireno de tipo importado(a), tiene un precio de 2163
+El producto de ID 17 de descripción: Silicona de tipo importado(a), tiene un precio de 1193
+El producto de ID 19 de descripción: Acrilicos de tipo importado(a), tiene un precio de 2156
+--------------------------------------------------------------------------------
+

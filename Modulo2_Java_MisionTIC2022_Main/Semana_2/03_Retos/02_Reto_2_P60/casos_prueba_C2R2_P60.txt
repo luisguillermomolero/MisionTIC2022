@@ -1,0 +1,82 @@
+================================================================================
+Casos públicos
+================================================================================
+
+Caso 1:
+Dispositivo dispositivos[]=new Dispositivo[3];
+dispositivos[0]=new Portatil(500.0, 3, 'E', 250);
+dispositivos[1]=new Tablet();
+dispositivos[2]=new Dispositivo(600.0, 3, 'D');
+PrecioTotal solucion1 = new PrecioTotal(dispositivos);
+solucion1.mostrarTotales();
+
+Respuesta:
+Total acerca de precios de dispositivos 1480.0
+Total acerca de precios de tabletas 250.0
+Total acerca de precios de computadores portátiles 565.0
+
+--------------------------------------------------------------------------------
+
+Caso 2:
+Dispositivo dispositivos2[]=new Dispositivo[7];
+dispositivos2[0]=new Tablet(150.0, 1);
+dispositivos2[1]=new Portatil(500.0, 2,'E',500);
+dispositivos2[2]=new Dispositivo();
+dispositivos2[3]=new Portatil(250.0, 4);
+dispositivos2[4]=new Tablet(400.0, 3, 'A', 4);
+dispositivos2[5]=new Dispositivo(50.0, 3);
+PrecioTotal solucion2 = new PrecioTotal(dispositivos2);
+solucion2.mostrarTotales();
+
+Respuesta:
+Total acerca de precios de dispositivos 1947.0
+Total acerca de precios de tabletas 682.0
+Total acerca de precios de computadores portátiles 900.0
+
+--------------------------------------------------------------------------------
+================================================================================
+Casos privados
+================================================================================
+
+Caso 3:
+Dispositivo dispositivos3[]=new Dispositivo[5];
+dispositivos3[0]=new Tablet(320.0, 1);
+dispositivos3[1]=new Portatil(350.0, 3);
+dispositivos3[2]=new Tablet(370.0, 2, 'A', 3);
+dispositivos3[3]=new Portatil(180.0, 2, 'E', 2000);
+dispositivos3[4]=new Dispositivo(50.0, 4);
+PrecioTotal solucion3 = new PrecioTotal(dispositivos3);
+solucion3.mostrarTotales();
+
+
+Respuesta:
+Total acerca de precios de dispositivos 1666.0
+Total acerca de precios de tabletas 807.0
+Total acerca de precios de computadores portátiles 734.0
+
+--------------------------------------------------------------------------------
+
+Caso 4:
+Dispositivo dispositivos4[]=new Dispositivo[10];
+dispositivos4[0]=new Tablet(320.0, 2);
+dispositivos4[1]=new Portatil(350.0, 2);
+dispositivos4[2]=new Tablet(370.0, 3, 'A', 3);
+dispositivos4[3]=new Portatil(180.0, 3);
+dispositivos4[4]=new Dispositivo(50.0, 2);
+dispositivos4[5]=new Tablet(300.0, 4, 'Z', 4);
+dispositivos4[6]=new Portatil(250.0, 2);
+dispositivos4[7]=new Tablet(400.0, 1, 'A', 2);
+dispositivos4[8]=new Portatil(200.0, 2);
+dispositivos4[9]=new Dispositivo(50.0, 1);
+PrecioTotal solucion4 = new PrecioTotal(dispositivos4);
+solucion4.mostrarTotales();
+
+
+Respuesta:
+Total acerca de precios de dispositivos 3077.0
+Total acerca de precios de tabletas 1702.0
+Total acerca de precios de computadores portátiles 1195.0
+
+--------------------------------------------------------------------------------
+
+

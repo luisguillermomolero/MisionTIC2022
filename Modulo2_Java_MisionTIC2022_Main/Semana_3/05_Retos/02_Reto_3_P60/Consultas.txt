@@ -1,0 +1,78 @@
+Consulta 1:
+SELECT l.ID_Lider, l.Nombre, l.Primer_Apellido FROM Lider l WHERE Salario >= 200000 AND Ciudad_Residencia = 'Bogota' ORDER BY l.ID_Lider;
+
+Resultado1:
+ID_Lider  Nombre    Primer_Apellido
+--------  --------  ---------------
+31        Carla     Linares
+40        Maradona  Arteaga
+45        Nadia     Lopez
+
+**************************************************************
+
+Consulta 2:
+SELECT l.Nombre, l.Primer_Apellido, p.Constructora, t.Codigo_Tipo, p.Fecha_Inicio FROM Lider l JOIN Proyecto p ON l.ID_Lider = p.ID_Lider JOIN Tipo t ON t.ID_Tipo = p.ID_Tipo WHERE t.Codigo_Tipo = 321 AND l.Nombre = 'Roncancio' AND l.Primer_Apellido = 'Orozco' ORDER BY p.Fecha_Inicio ;
+
+Resultado2:
+Nombre     Primer_Apellido  Constructora           Codigo_Tipo  Fecha_Inicio
+---------  ---------------  ---------------------  -----------  ------------
+Roncancio  Orozco           Ingenieros Ltda.       321          2019-09-09
+Roncancio  Orozco           Ingenieros Ltda.       321          2020-12-07
+Roncancio  Orozco           Edificios y Edificios  321          2021-04-04
+
+**************************************************************
+Consulta 3:
+SELECT ID_Lider, ID_Proyecto, ID_Tipo FROM Proyecto p WHERE ID_Proyecto >= 100 AND ID_Proyecto < 120 GROUP BY ID_Lider ORDER BY ID_Lider;
+
+Resultado3:
+ID_Lider  ID_Proyecto  ID_Tipo
+--------  -----------  -------
+9         106          4
+11        108          1
+12        101          2
+13        105          5
+20        107          2
+24        112          5
+25        119          5
+27        100          5
+31        110          4
+34        114          5
+37        104          1
+38        113          3
+41        118          1
+43        115          1
+49        102          2
+
+
+**************************************************************
+Consulta 4:
+SELECT "El producto de ID " || ID_MaterialConstruccion || " de descripción: " || Nombre_Material || " de tipo importado(a), tiene un precio  de " || Precio_Unidad FROM MaterialConstruccion mc WHERE Importado = 'Si' AND Precio_Unidad >= 1000 ORDER BY ID_MaterialConstruccion;
+
+Resultado4:
+"El producto de ID " || ID_MaterialConstruccion || " de descripción: " || Nombre_Material || " de tipo importado(a), tiene un precio  de " || Precio_Unidad
+-----------------------------------------------------------------------------------------------------------------------------------------------------------
+El producto de ID 1 de descripción: Granito de tipo importado(a), tiene un precio  de 1130
+El producto de ID 3 de descripción: Cemento de tipo importado(a), tiene un precio  de 1278
+El producto de ID 4 de descripción: Ladrillo de tipo importado(a), tiene un precio  de 1011
+El producto de ID 6 de descripción: Acero de tipo importado(a), tiene un precio  de 1519
+El producto de ID 8 de descripción: Aluminio de tipo importado(a), tiene un precio  de 1187
+El producto de ID 13 de descripción: Linoleo de tipo importado(a), tiene un precio  de 2227
+El producto de ID 14 de descripción: Bambu de tipo importado(a), tiene un precio  de 1986
+El producto de ID 16 de descripción: Poliestireno de tipo importado(a), tiene un precio  de 2163
+El producto de ID 17 de descripción: Silicona de tipo importado(a), tiene un precio  de 1193
+El producto de ID 19 de descripción: Acrilicos de tipo importado(a), tiene un precio  de 2156
+
+**************************************************************
+Consulta 5:
+SELECT p.ID_Lider, p.ID_Proyecto, p.Constructora FROM Proyecto p GROUP BY p.ID_Lider HAVING p.ID_Lider > 45 ORDER BY p.ID_Lider ;
+
+Resultado5:
+ID_Lider  ID_Proyecto  Constructora     
+--------  -----------  -----------------
+46        5            Ingenieros Ltda.
+47        34           Hermanos Gallego
+48        8            Hermanos Gallego
+49        102          Arquitectura S.A.
+50        7            Arquitectura S.A.
+
+**************************************************************
