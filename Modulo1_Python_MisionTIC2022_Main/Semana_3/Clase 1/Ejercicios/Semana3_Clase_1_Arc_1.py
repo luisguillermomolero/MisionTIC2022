@@ -11,7 +11,7 @@ y = 10
 y = y-1
 y -= 9
 
-print(y)
+print(y) #imprimir y
 
 #Ejercicio 3
 
