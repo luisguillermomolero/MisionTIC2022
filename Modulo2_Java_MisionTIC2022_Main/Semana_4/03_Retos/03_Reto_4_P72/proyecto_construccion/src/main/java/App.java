@@ -5,7 +5,7 @@ public class App {
 
         //Casos de prueba 
 
-        //Requerimiento 1 - Reto3
+        
         VistaRequerimientosReto4.requerimiento1();
         System.out.println();
 
