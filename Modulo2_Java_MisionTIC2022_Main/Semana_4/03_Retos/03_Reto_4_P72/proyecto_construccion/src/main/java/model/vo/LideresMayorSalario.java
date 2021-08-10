@@ -58,4 +58,5 @@ public class LideresMayorSalario {
     public void setCiudadNacimiento(String ciudadNacimiento) {
         this.ciudadNacimiento = ciudadNacimiento;
     }
-}
+
+    }
