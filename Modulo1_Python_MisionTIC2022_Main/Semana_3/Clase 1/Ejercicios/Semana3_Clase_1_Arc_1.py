@@ -12,7 +12,6 @@ y = y-1
 y -= 9
 
 print(y)
-print(x)
 
 #Ejercicio 3
 
