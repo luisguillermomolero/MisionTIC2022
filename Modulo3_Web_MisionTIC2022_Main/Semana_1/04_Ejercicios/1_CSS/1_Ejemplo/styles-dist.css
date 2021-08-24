@@ -1,0 +1,16 @@
+/*style.css*/
+#parrafo{
+    color: blueviolet;
+    }
+    .parrafo{
+    color: red;
+    }
+    a{
+    color: inherit;
+    }
+    p{
+    color:blue !important;
+    }
+    .parrafo-2{
+    color: purple;
+    }

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <!-- Article: https://paulrhayes.com/2012-11/fun-with-face-detection-canvas-and-webcam-video -->
+    <!-- Demo: https://paulrhayes.com/experiments/webcam/ -->
+    <!-- Originally posted: 18th November 2012 -->
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <title>Face detection, canvas and webcams &mdash; Paul Hayes</title>
+    <meta name="author" content="Paul Hayes" />
+    <link rel="canonical" href="https://paulrhayes.com/experiments/webcam/" />
+    <link rel="stylesheet" href="../experiment-styles.css" />
+
+    <link rel="stylesheet" href="css/experiment.css" />
+</head>
+<body class="experiment">
+    <div class="wrapper">
+        <p class="learn">
+            This is a demo, <a href="https://paulrhayes.com/2012-11/fun-with-face-detection-canvas-and-webcam-video">learn how it works</a>.
+        </p>
+
+<canvas width="200" height="160" class="scale"></canvas>
+
+<p class="transforming-content">This element ought to shrink or grow as you move towards or away from it.</p>
+
+<!-- Include the CCV image processing and face detection libraries -->
+<script src="js/ccv.js"></script>
+<script src="js/face.js"></script>
+
+    </div>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script>
+    <script src="js/experiment.js"></script>
+</body>
+</html>

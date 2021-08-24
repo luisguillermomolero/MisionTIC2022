@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>JavaScript can Change HTML</h2>
+
+<p id="p1">Hello World!</p>
+
+<script>
+document.getElementById("p1").innerHTML = "New text!";
+</script>
+
+<p>The paragraph above was changed by a script.</p>
+
+</body>
+</html>

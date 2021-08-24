@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+<body>
+
+<h2>JavaScript String.trim()</h2>
+
+<p>IE 8 does not support String.trim(). To trim a string you can use a polyfill.</p>
+
+<script>
+if (!String.prototype.trim) {
+  String.prototype.trim = function () {
+    return this.replace(/^[\s\uFEFF\xA0]+|[\s\uFEFF\xA0]+$/g, '');
+  };
+};
+var str = "     Hello World!    ";
+alert(str.trim());
+</script>
+
+</body>
+</html>

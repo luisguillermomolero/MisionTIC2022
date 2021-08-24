@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html>
+<body>
+var i = 0;
+while
+ (i 
+<
+ 10) {
+  console.log(i);
+  i++
+}
+</body>
+</html>
