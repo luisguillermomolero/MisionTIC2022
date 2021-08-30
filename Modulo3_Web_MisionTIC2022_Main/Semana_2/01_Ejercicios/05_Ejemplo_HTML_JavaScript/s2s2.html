@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <script type="text/javascript" src="s2s2.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+<h1>Qué podemos hacer con JavaScript?</h1>
+
+    <h2>JavaScript puede cambiar los atributos en HTML.</h2>
+        <p>En este ejemplo cambiamos el valor de src en img, teniendo en la misma carpeta 2 imagenes, un zapato rojo y un zapato negro</p>
+        <button onclick="document.getElementById('myImage').src='zapatoRojo.png'">Zapato rojo</button>
+        <img id="myImage" src="zapatoRojo.png" style="width:100px">
+        <button onclick="document.getElementById('myImage').src='zapatoNegro.png'">Zapato negro</button>
+
+    <h2>ocultar o mostrar elementos</h2>
+        <p id="demo">Elemento a ocultar o mostrar</p>
+        <!-- Ocultar -->
+        <button type="button" onclick="document.getElementById('demo').style.display='none'">Oculta!</button>
+        <!-- Mostrar -->
+        <button type="button" onclick="document.getElementById('demo').style.display='block'">Muestra!</button>
+
+
+    <h2>JavaScript en el body</h2>
+        <p id="demo2">Párrafo</p>
+        <button type="button" onclick="myFunction()">Clic para cambiar el párrafo</button>
+        <script>
+            /*Esta función cambia el valor del párrafo con id=demo2.  Modifica ambos textos para ver qué cambia */
+            function myFunction() {
+                    document.getElementById("demo2").innerHTML = "Párrafo cambiado.";
+            }
+        </script>
+
+    <h2>Let y const</h2>
+        <script>
+            var  x = 10;
+            // aquí x es 10, declarada al inicio
+            {  
+                let x = 2;
+                // Aquí, en este bloque x es 2
+            }
+            // Aquí x is 10
+
+            {  
+            const x = 2;
+            // Aquí x es 2 e inmediatamente se asigna valor
+            }
+            // Aquí x es 10
+            
+        </script>
+
+    <h2>Mensaje en ventana emergente (Ver código fuente): </h2>
+        <script>
+            /*Puedes comentar la siguiente línea para que no aparezca la molesta ventana con el número 11 */
+            alert(5 + 6);
+        </script>
+
+    <h2>Eventos</h2>        
+        <button onclick="this.innerHTML=Date()">Da clic para conocer la hora?</button>
+
+        <script>
+            //  La propiedad event.target  puede ser usada para implementar una delegación del evento. 
+            //Crear una lista
+            let ul = document.createElement('ul');
+            document.body.appendChild(ul);
+
+            let li1 = document.createElement('li');
+            let li2 = document.createElement('li');
+            ul.appendChild(li1);
+            ul.appendChild(li2);
+
+            function hide(e){
+            // e.target se refiere cuando se clickea el elemento <li>
+            // Esto es diferente de e.currentTarget que se referiría al padre <ul> en este contexto
+            e.target.style.visibility = 'hidden';
+            }
+
+            // Incluir el 'listener' a la lista
+            // Se ejecutará cuando se haga click en cada <li>
+            ul.addEventListener('click', hide, false);
+            
+        </script>
+
+    <h2>Funcion fahrenheit : Convertir Fahrenheit a Celsius:</h2>
+        <p id="fahr">temperatura</p>
+        <script>
+            document.getElementById("fahr").innerHTML = toCelsius(100);
+        </script>
+
+    <h2>Funciones Arrow </h2>
+        <p id="holaMundo"></p>
+        <script>
+            document.getElementById("holaMundo").innerHTML = hello2();
+        </script>
+      
+
+    <h2>Saludo con condicionales</h2>
+        <button onclick="saludar()">Clic para que te saludemos</button>
+        <p id="saludo"></p>
+    
+    <h2>Qué día es hoy con switch</h2>
+        <button onclick="hoyEsDia()">Clic para ver qué día es hoy</button>
+        <p id="diaHoy"></p>
+
+    <h2>Lista de productos 1 for</h2>
+        <p id="listaP"></p>
+        <script>
+            document.getElementById("listaP").innerHTML = listaProductos1();
+        </script>    
+    <h2>Lista de productos 2 for/in</h2>
+        <p id="listaP2"></p>
+       
+        <script>
+            document.getElementById("listaP2").innerHTML = listaProductos2();
+        </script>
+
+     <h2>Errores try catch</h2>
+     <p id="errorTry"></p>
+        <script>
+            try {
+                mensajeAlerta("Esto es un error!");
+            }
+            catch(err) {
+                document.getElementById("errorTry").innerHTML = err.message;
+            }
+        </script>
+    <h2>Programación Orientada a Objetos</h2>    
+    <p>JavaScript soporta este tipo de programación, aquí cada objeto es capaz de recibir 
+        mensajes, procesar datos y enviar mensajes a otros objetos</p>
+    
+    
+    <h2>Classes.  JS utiliza funciones como clases</h2>
+        <p id="productoClasse"></p>
+        <script>
+            miProducto = new Producto("Zapato", 1525);
+            document.getElementById("productoClasse").innerHTML =
+            miProducto.nombre + " " + miProducto.codigo;
+        </script>
+  
+    <h2>Métodos</h2>    
+    <p>Los métodos son funciones que se definen como funciones, aunque su lógica es de propiedades</p>
+    <p>Herencia simple.  La herencia es una manera de crear una clase como una versión especializada de 
+        una o más clases (JavaScript sólo permite herencia simple). La clase especializada comúnmente se 
+        llama hija o secundaria, y la otra clase se le llama padre o primaria. En JavaScript la herencia 
+        se logra mediante la asignación de una instancia de la clase primaria a  la clase secundaria, 
+        y luego se hace la especialización. </p>
+    <p>Encapsulación: por medio de la cual cada clase hereda los métodos de su elemento primario y sólo tiene que definir las cosas que desea cambiar.</p>    
+        <script>
+            function Persona(primerNombre) {
+            this.primerNombre = primerNombre;
+            }
+            // métodos
+            Persona.prototype.diHola = function() {
+                alert ('Hola, Soy ' + this.primerNombre);
+            };
+           
+            Persona.prototype.caminar = function() {
+                alert("Estoy caminando!");
+            };
+
+            var persona1 = new Persona("Estudiante1");
+            var persona2 = new Persona("Estudiante2");
+
+            // Llamadas al método diHola de la clase Persona.
+            persona1.diHola(); // muestra "Hola, Soy Estudiante1"
+            persona2.diHola(); // muestra "Hola, Soy Estudiante2"
+        
+            // Definimos el constructor Estudiante
+            function Estudiante(primerNombre, asignatura) {
+            // Llamamos al constructor padre, nos aseguramos (utilizando Function#call) que "this" se
+            // ha establecido correctamente durante la llamada
+            Persona.call(this, primerNombre);
+
+            //Inicializamos las propiedades específicas de Estudiante
+            this.asignatura = asignatura;
+            };
+
+            // Creamos el objeto Estudiante.prototype que hereda desde Persona.prototype
+            // Nota: Un error común es utilizar "new Persona()" para crear Estudiante.prototype 
+            // Esto es incorrecto por varias razones, y no menos importante que no le estamos pasando nada
+            // a Persona desde el argumento "primerNombre". El lugar correcto para llamar a Persona
+            // es arriba, donde llamamos a Estudiante.
+            Estudiante.prototype = Object.create(Persona.prototype);    // Vea las siguientes notas
+
+            // Establecer la propiedad "constructor" para referencias a Estudiante
+            Estudiante.prototype.constructor = Estudiante;
+
+            // Reemplazar el método "diHola"
+            Estudiante.prototype.diHola = function(){
+            alert("Hola, Soy " + this.primerNombre + ". Estoy estudiando " + this.asignatura + ".");
+            };
+
+            // Agregamos el método "diAdios"
+            Estudiante.prototype.diAdios = function() {
+            alert("¡ Adios !");
+            };
+
+            // Ejemplos de uso
+            var estudiante1 = new Estudiante("Carolina", "Ciclo III");
+            estudiante1.diHola();    // muestra "Hola, Soy Carolina. Estoy estudianto Ciclo III."
+            estudiante1.caminar();   // muestra "Estoy caminando!"
+            estudiante1.diAdios();   // muestra "¡ Adios !"
+
+            // Comprobamos que las instancias funcionan correctamente
+            alert(estudiante1 instanceof Persona);      // devuelve true
+            alert(estudiante1 instanceof Estudiante);   // devuelve true
+        
+        </script>
+
+
+    <h2>Operadores de listas</h2>
+        <p id="opLista"></p>
+        <p id="opListaMap"></p>
+        <p id="tareaDificil"></p>
+        <script>
+            let tareas = [
+                {   'nombre'     : 'Apertura de la tienda',     'duracion' : 15     },
+                {   'nombre'     : 'Revisión de inventarios',   'duracion' : 60     },
+                {   'nombre'     : 'Pago a proveedores',        'duracion' : 240    }
+            ];
+            //Se creará una nueva lista con el nombre de las tareas anteriores
+            let tareas_nombres = [];
+            //  Usando forEach
+            tareas.forEach(function (tarea) {
+                tareas_nombres.push(tarea.nombre);
+            });
+            document.getElementById("opLista").innerHTML=tareas_nombres;
+
+            // usando map
+            let tareas_nombres2 = tareas.map(function (tarea) {
+                return tarea.nombre; 
+            });
+            document.getElementById("opListaMap").innerHTML=tareas_nombres2;
+
+            //Usando filter listaremos las tareas que llevan una hora o más para solucionar
+            let tareas_dificiles = tareas.filter(function (tarea) {
+                return tarea.duracion >= 60;
+            });
+            
+            // Using ES6
+            let tareas_dificiles2 = tareas.filter((tarea) => tarea.duracion >= 60 );
+
+            // se muestran las tareas como objetos
+            document.getElementById("tareaDificil").innerHTML=tareas_dificiles;
+        </script>
+
+        <h2>Promise o promesa es un objeto que representa la terminación o el fracaso de una operación asíncrona.</h2>
+
+        <script>
+            /*Este ejemplo es ejecutado cuando pulsas el botón. Necesitas un navegador que soporte 
+            Promise. Al pulsar el botón varias veces en un período corto de tiempo, verás las diferentes 
+            promesas siendo cumplidas una tras otra.*/
+            'use strict';
+            var promiseCount = 0;
+
+            function testPromise() {
+            var thisPromiseCount = ++promiseCount;
+
+            var log = document.getElementById('log');
+            log.insertAdjacentHTML('beforeend', thisPromiseCount +
+                ') Comenzó (<small>Comenzó el código sincrónico</small>)<br/>');
+
+            // Hacemos una promesa: prometemos un contador numérico de esta promesa,
+            // empezando por 1 (después de esperar 3s)
+            var p1 = new Promise(
+                // La función resolvedora es llamada con la
+                // habilidad de resolver o rechazar la promesa
+                function(resolve, reject) {
+                log.insertAdjacentHTML('beforeend', thisPromiseCount +
+                    ') Comenzó la promesa (<small>Código asíncrono comenzó</small>)<br/>');
+
+                // Esto es solo un ejemplo para crear asincronismo
+                window.setTimeout(
+                    function() {
+                    // ¡Cumplimos la promesa!
+                    resolve(thisPromiseCount);
+                    }, Math.random() * 2000 + 1000);
+                }
+            );
+
+            // Definimos qué hacer cuando la promesa es resuelta/cumplida con la llamada
+            // al método then(). La llamada al método catch() define qué hacer si
+            // la promesa es rechazada
+            p1.then(
+                // Registrar el valor de la promesa cumplida
+                function(val) {
+                log.insertAdjacentHTML('beforeend', val +
+                    ') Promesa cumplida (<small>Código asíncrono terminado.</small>)<br/>');
+                })
+            .catch(
+                // Registrar la razón del rechazo
+                function(reason) {
+                console.log('Manejar promesa rechazada ('+reason+') aquí.');
+                });
+
+            log.insertAdjacentHTML('beforeend', thisPromiseCount +
+                ') Promesa hecha (<small>Código síncrono terminado. </small>)<br/>');
+            }
+        </script>
+
+        <h2>Parámetros Rest</h2>
+        <script>
+            function sortRestArgs(...theArgs) {
+            var sortedArgs = theArgs.sort();
+            return sortedArgs;
+            }
+
+            console.log(sortRestArgs(5,3,7,1)); // muestra 1,3,5,7
+
+            function sortArguments() {
+            var sortedArgs = arguments.sort(); 
+            return sortedArgs; // esto nunca va a ocurrir
+            }
+
+            // lanza un TypeError: arguments.sort is not a function
+            console.log(sortArguments(5,3,7,1));
+
+            //Para poder usar los métodos de  Array en el objeto arguments, se debe convertir a un Array primero.
+
+        </script>
+
+
+</body>
+</html>
