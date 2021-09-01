@@ -1,50 +1,63 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta charset="utf-8">
-        <title>CRUD</title>
-        <script type="text/javascript" src="http://code.jquery.com/jquery-2.1.4.min.js"></script>
-        <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css" rel="stylesheet">
-    </head>
-    <style>
-        .glyphicon-trash {
-            color:red;
-            }
+  <head>
+    <meta charset="utf-8" />
+    <title>CRUD</title>
+    <script
+      type="text/javascript"
+      src="http://code.jquery.com/jquery-2.1.4.min.js"
+    ></script>
+    <link
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <style>
+    .glyphicon-trash {
+      color: red;
+    }
+  </style>
+  <body class="container">
+    <div class="mensaje-alerta"></div>
 
-    </style>
+    <div class="jumbotron row">
+      <h2><small>Gestión de Clientes</small></h2>
 
-    <body class="container">
-        <div class="mensaje-alerta">
-        </div>
-
-        <div class="jumbotron row ">
-            <h2><small>Gestión de Clientes</small></h2>
-
-
-            <div class="col-md-6">
-                <hr>
-                    <p class="modo"> <span class="glyphicon glyphicon-plus"></span>Agregar Cliente</p>
-                <form id="cliente-form">
-                    <input  class="form-control" type="text" id="nombre" placeholder="Nombre">
-                    <input  class="form-control" type="text" id="correo" placeholder="Direccion">
-                    <input  class="form-control" type="date" id="fecha_nacimiento" placeholder="Fecha de nacimiento">
-                    <br>
-                    <input type="submit" class="btn btn-success" value=" Guardar">
-                </form>
-                <br>
-                <br>
-                <div id="numeroClientes">
-
-                </div>
-
-            </div>
-        </div>
-        <br>
-        <br>
-        <table class="table" id="dbClientes-list">
-        </table>
-
-    </body>
-    <script type="text/javascript" src="funciones.js"></script>
-
+      <div class="col-md-6">
+        <hr />
+        <p class="modo">
+          <span class="glyphicon glyphicon-plus"></span>Agregar Cliente
+        </p>
+        <form id="cliente-form">
+          <input
+            class="form-control"
+            type="text"
+            id="nombre"
+            placeholder="Nombre"
+          />
+          <input
+            class="form-control"
+            type="text"
+            id="correo"
+            placeholder="Direccion"
+          />
+          <input
+            class="form-control"
+            type="date"
+            id="fecha_nacimiento"
+            placeholder="Fecha de nacimiento"
+          />
+          <br />
+          <input type="submit" class="btn btn-success" value=" Guardar" />
+        </form>
+        <br />
+        <br />
+        <div id="numeroClientes"></div>
+      </div>
+    </div>
+    <br />
+    <br />
+    <table class="table" id="dbClientes-list"></table>
+  </body>
+  <script type="text/javascript" src="funciones.js"></script>
 </html>
