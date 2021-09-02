@@ -112,7 +112,7 @@ function Editar() {
     Correo: $("#correo").val(),
     Fecha_nacimiento: $("#fecha_nacimiento").val(),
   });
-  localStorage.setItem("dbClientes", JSON.stringify(dbClientes));
+  localStorage.setItem("dbClientes", JSON.stringify(dbClientes));// agregar al almacen
   operacion = "A"; //Regresamos la valor original
   return true;
 }

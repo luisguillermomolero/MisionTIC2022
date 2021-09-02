@@ -1,146 +1,149 @@
 /* Header superio */
-body{ /* Selector simple*/
-    margin: 0;
-    padding: 0; 
+body {
+  /* Selector simple*/
+  margin: 0;
+  padding: 0;
 }
 /* Header inferior */
-.header{ /*Selector compuesto*/
-    display: flex;
-    justify-content: space-between;
-    height: 70px;
-    border-bottom: 1px solid red;
-    margin-top: 0;
-    padding-top: 0;
+.header {
+  /*Selector compuesto*/
+  display: flex;
+  justify-content: space-between;
+  height: 70px;
+  border-bottom: 1px solid red;
+  margin-top: 0;
+  padding-top: 0;
 }
 /* Header <a>*/
-.header a{
-    font-size: 1em;
-    font-family: 'Quicksand', sans-serif;
-    color: #00438D;
-    padding: 0 10px; 
-    height: inherit; 
-    display: flex;
-    align-items: center;
+.header a {
+  font-size: 1em;
+  font-family: "Quicksand", sans-serif;
+  color: #00438d;
+  padding: 0 10px;
+  height: inherit;
+  display: flex;
+  align-items: center;
 }
 /* Logo general*/
-.logo{
-    display: flex;
-    margin-block-start: 3px;
-    margin-block-end: 3px;
-    margin-inline-start: 0px;
-    margin-inline-end: 0px;
+.logo {
+  display: flex;
+  margin-block-start: 3px;
+  margin-block-end: 3px;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
 }
 /*Logo imagen*/
-.logo img{
-    margin: 0px 0px 0px 5px ;
-    display: flex;
-    padding: 0;
-    border: 0;
+.logo img {
+  margin: 0px 0px 0px 5px;
+  display: flex;
+  padding: 0;
+  border: 0;
 }
 /* Lista*/
-.header ol{
-    list-style: none; 
-    display: flex; /*Sirve para poner la lista de elementos de la lista horizontalmente*/ 
-    height: inherit;
+.header ol {
+  list-style: none;
+  display: flex; /*Sirve para poner la lista de elementos de la lista horizontalmente*/
+  height: inherit;
 }
 /* Header Lista y elementos de la lista*/
-.header ol li{
-    height: inherit;
+.header ol li {
+  height: inherit;
 }
 /* Sombreado de links para "Acerca de" y "CRUD"*/
 .link:hover {
-    color: white;
-    background-color: #00438D;
-    border: 0.5px solid #D5D9D9;
+  color: white;
+  background-color: yellowgreen;
+  border: 0.5px solid #3e6e6e;
 }
 /* Lista General*/
-ol{
-    margin: 0;
-    padding: 0;
+ol {
+  margin: 0;
+  padding: 0;
 }
-/* Menu header "Acerca de" y "CRUD"*/ 
-.menu{
-    height: inherit;
+/* Menu header "Acerca de" y "CRUD"*/
+.menu {
+  height: inherit;
 }
 /*Menú elementos de la lista*/
-.menu li{
-    display: inline; /*para poner la lista en horizontal*/
+.menu li {
+  display: inline; /*para poner la lista en horizontal*/
 }
 /*Selector compuesto en footer*/
-.footer{
+.footer {
   display: block;
   justify-content: center;
   align-items: center;
   height: 50px;
-  border-top: 1px solid #D5D9D9;
+  border-top: 1px solid #d5d9d9;
   margin-top: 0;
   padding: 1em;
 }
 /*Enlaces de <a>*/
-a:link{ /* Selector pseudoclase */
-text-decoration: none;
+a:link {
+  /* Selector pseudoclase */
+  text-decoration: none;
 }
-.social{
+.social {
   width: 32px;
   height: 32px;
   display: inline-block;
 }
-.footer-fb{
-background-image: url('../images/fb.ico');
+.footer-fb {
+  background-image: url("../images/fb.ico");
 }
-.footer-twitter{
-background-image: url('../images/twitter.ico');
+.footer-twitter {
+  background-image: url("../images/twitter.ico");
 }
-.footer-instagram{
-background-image: url('../images/instagram.ico');
+.footer-instagram {
+  background-image: url("../images/instagram.ico");
 }
-.footer-github{
-background-image: url('../images/github.ico');
+.footer-github {
+  background-image: url("../images/github.ico");
 }
-.footer-linkedin{
-    background-image: url('../images/linkedin.ico');
+.footer-linkedin {
+  background-image: url("../images/linkedin.ico");
 }
-form{
-    text-align: center;
+form {
+  text-align: center;
 }
-.tablita{
-    display: inline-block;    
+.tablita {
+  display: inline-block;
 }
-.tabla{
-border-collapse: collapse; /*Esta propiedad hace que parezca mas una tabla*/
-font-family: 'Quicksand', sans-serif;
+.tabla {
+  border-collapse: collapse; /*Esta propiedad hace que parezca mas una tabla*/
+  font-family: "Quicksand", sans-serif;
 }
 /*Header de la tabla*/
-table tr th{
-    border: 1px solid #D5D9D9;
-    width: 100px;
-    height: 25px;
-    color: white;
-    background-color: #00438D;
+table tr th {
+  border: 1px solid #d5d9d9;
+  width: 100px;
+  height: 25px;
+  color: white;
+  background-color: #00438d;
 }
 td {
-    border: 1px solid #D5D9D9;
-    width: 100px;
-    height: 25px;
+  border: 1px solid #d5d9d9;
+  width: 100px;
+  height: 25px;
 }
 /*TextBox*/
-.caja{
-    display: block;
+.caja {
+  display: block;
 }
-.caja label{
-    font-family: 'Quicksand', sans-serif;
+.caja label {
+  font-family: "Quicksand", sans-serif;
 }
-.caja input{
-    width: 8em;
-    height: 2em;
-    text-align: center;
-    font-family: 'Quicksand', sans-serif;  
+.caja input {
+  width: 8em;
+  height: 2em;
+  text-align: center;
+  font-family: "Quicksand", sans-serif;
 }
-.submit{
-    width: 8em;
-    height: 2em;
-    font-family: 'Quicksand', sans-serif;
-    color: white;
-    background-color: #00438D;
-    border: 2px solid white;
+.submit {
+  width: 8em;
+  height: 2em;
+  font-family: "Quicksand", sans-serif;
+  color: white;
+  background-color: #00438d;
+  border: 2px solid white;
 }
