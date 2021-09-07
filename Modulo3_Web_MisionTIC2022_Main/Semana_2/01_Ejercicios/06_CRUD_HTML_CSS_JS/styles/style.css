@@ -52,7 +52,7 @@ body {
 /* Sombreado de links para "Acerca de" y "CRUD"*/
 .link:hover {
   color: white;
-  background-color: yellowgreen;
+  background-color: red;
   border: 0.5px solid #3e6e6e;
 }
 /* Lista General*/
